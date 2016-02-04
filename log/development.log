@@ -12876,3 +12876,115 @@ Processing by MoviesController#index as HTML
   [1m[35mUser Load (2.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
   Rendered layouts/_footer.html.erb (5.1ms)
 Completed 200 OK in 241ms (Views: 235.8ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/movies/new" for 10.0.2.2 at 2016-02-04 19:47:43 +0000
+Processing by MoviesController#new as HTML
+  Rendered movies/_form.html.erb (40.1ms)
+  Rendered movies/new.html.erb within layouts/application (87.5ms)
+  [1m[36mUser Load (2.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_footer.html.erb (61.2ms)
+Completed 200 OK in 427ms (Views: 356.8ms | ActiveRecord: 10.7ms)
+
+
+Started POST "/movies" for 10.0.2.2 at 2016-02-04 19:49:11 +0000
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mrJdWJaE7UE5F3UBib2pXtC0E8bmRAedcbnFixJC++M=", "movie"=>{"title"=>"Whiplash", "release_date"=>"2014-01-20", "director"=>"Damien Chazelle", "runtime_in_minutes"=>"106", "poster_image_url"=>"", "description"=>"Andrew Neyman is an ambitious young jazz drummer, single-minded in his pursuit to rise to the top of his elite east coast music conservatory. Plagued by the failed writing career of his father, Andrew hungers day and night to become one of the greats. Terence Fletcher, an instructor equally known for his teaching talents as for his terrifying methods, leads the top jazz ensemble in the school. Fletcher discovers Andrew and transfers the aspiring drummer into his band, forever changing the young man's life."}, "commit"=>"Submit"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered movies/_form.html.erb (7.8ms)
+  Rendered movies/new.html.erb within layouts/application (40.6ms)
+  [1m[35mUser Load (1.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered layouts/_footer.html.erb (3.9ms)
+Completed 200 OK in 242ms (Views: 230.8ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2016-02-04 19:49:12 +0000
+
+
+Started GET "/assets/movies.css?body=1" for 10.0.2.2 at 2016-02-04 19:49:12 +0000
+
+
+Started GET "/assets/reviews.css?body=1" for 10.0.2.2 at 2016-02-04 19:49:12 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2016-02-04 19:49:12 +0000
+
+
+Started GET "/assets/users.css?body=1" for 10.0.2.2 at 2016-02-04 19:49:12 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2016-02-04 19:49:12 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2016-02-04 19:49:12 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2016-02-04 19:49:12 +0000
+
+
+Started GET "/assets/movies.js?body=1" for 10.0.2.2 at 2016-02-04 19:49:12 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2016-02-04 19:49:12 +0000
+
+
+Started GET "/assets/users.js?body=1" for 10.0.2.2 at 2016-02-04 19:49:12 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2016-02-04 19:49:13 +0000
+
+
+Started POST "/movies" for 10.0.2.2 at 2016-02-04 19:49:23 +0000
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mrJdWJaE7UE5F3UBib2pXtC0E8bmRAedcbnFixJC++M=", "movie"=>{"title"=>"Whiplash", "release_date"=>"2014-01-20", "director"=>"Damien Chazelle", "runtime_in_minutes"=>"106", "poster_image_url"=>"", "image"=>#<ActionDispatch::Http::UploadedFile:0xb608abe0 @tempfile=#<Tempfile:/tmp/RackMultipart20160204-10108-fuh651>, @original_filename="whiplash.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"movie[image]\"; filename=\"whiplash.jpg\"\r\nContent-Type: image/jpeg\r\n">, "description"=>"Andrew Neyman is an ambitious young jazz drummer, single-minded in his pursuit to rise to the top of his elite east coast music conservatory. Plagued by the failed writing career of his father, Andrew hungers day and night to become one of the greats. Terence Fletcher, an instructor equally known for his teaching talents as for his terrifying methods, leads the top jazz ensemble in the school. Fletcher discovers Andrew and transfers the aspiring drummer into his band, forever changing the young man's life."}, "commit"=>"Submit"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (5.9ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "image", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Thu, 04 Feb 2016 19:49:23 UTC +00:00], ["description", "Andrew Neyman is an ambitious young jazz drummer, single-minded in his pursuit to rise to the top of his elite east coast music conservatory. Plagued by the failed writing career of his father, Andrew hungers day and night to become one of the greats. Terence Fletcher, an instructor equally known for his teaching talents as for his terrifying methods, leads the top jazz ensemble in the school. Fletcher discovers Andrew and transfers the aspiring drummer into his band, forever changing the young man's life."], ["director", "Damien Chazelle"], ["image", "whiplash.jpg"], ["poster_image_url", ""], ["release_date", Mon, 20 Jan 2014 00:00:00 UTC +00:00], ["runtime_in_minutes", 106], ["title", "Whiplash"], ["updated_at", Thu, 04 Feb 2016 19:49:23 UTC +00:00]]
+  [1m[36m (3.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/movies
+Completed 302 Found in 152ms (ActiveRecord: 9.9ms)
+
+
+Started GET "/movies" for 10.0.2.2 at 2016-02-04 19:49:23 +0000
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (3.3ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (10.6ms)
+  [1m[36mUser Load (1.9ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_footer.html.erb (4.5ms)
+Completed 200 OK in 237ms (Views: 231.4ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/assets/movies.css?body=1" for 10.0.2.2 at 2016-02-04 19:49:23 +0000
+
+
+Started GET "/assets/reviews.css?body=1" for 10.0.2.2 at 2016-02-04 19:49:23 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2016-02-04 19:49:23 +0000
+
+
+Started GET "/assets/users.css?body=1" for 10.0.2.2 at 2016-02-04 19:49:23 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2016-02-04 19:49:24 +0000
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2016-02-04 19:49:24 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2016-02-04 19:49:24 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2016-02-04 19:49:24 +0000
+
+
+Started GET "/assets/movies.js?body=1" for 10.0.2.2 at 2016-02-04 19:49:24 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2016-02-04 19:49:24 +0000
+
+
+Started GET "/assets/users.js?body=1" for 10.0.2.2 at 2016-02-04 19:49:24 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2016-02-04 19:49:24 +0000
