@@ -17,7 +17,14 @@ class Movie < ActiveRecord::Base
   validates :release_date,
     presence: true
 
+  validates :poster_image_url,
+    presence: true, unless: ->(movie){ movie.image.present? }
+
+  validates :image,
+    presence: true, unless: ->(movie){ movie.poster_image_url.present? }
+
   validate :release_date_is_in_the_past
+
 
   def review_average
     if reviews.size > 0
