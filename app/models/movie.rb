@@ -14,9 +14,6 @@ class Movie < ActiveRecord::Base
   validates :description,
     presence: true
 
-  validates :poster_image_url,
-    presence: true
-
   validates :release_date,
     presence: true
 
@@ -25,10 +22,10 @@ class Movie < ActiveRecord::Base
   def review_average
     if reviews.size > 0
       reviews.sum(:rating_out_of_ten)/reviews.size
-    else
-      puts "no reviews"
     end
   end
+
+  mount_uploader :image, ImageUploader # mount_uploader = method; :image = column name in movies table; ImageUploader = image_uploader.rb in app/uploaders
 
   protected
 
