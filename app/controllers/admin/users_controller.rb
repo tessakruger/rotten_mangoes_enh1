@@ -13,4 +13,5 @@ class Admin::UsersController < ApplicationController
     render text: "Create an admin"
   end
 
+
 end

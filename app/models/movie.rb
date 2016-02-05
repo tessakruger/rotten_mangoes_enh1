@@ -1,6 +1,7 @@
 class Movie < ActiveRecord::Base
 
   has_many :reviews
+  belongs_to :user
 
   validates :title,
     presence: true
@@ -18,9 +19,6 @@ class Movie < ActiveRecord::Base
     presence: true
 
   validates_presence_of :poster_image_url,
-    allow_nil: true
-
-  validates_presence_of :image,
     allow_nil: true
 
   validate :release_date_is_in_the_past
