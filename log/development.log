@@ -13030,3 +13030,235 @@ Migrating to AddAdminToUsers (20160205003947)
   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
   [1m[35m (0.1ms)[0m  commit transaction
   [1m[36mUser Load (2.4ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mUser Load (2.4ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mActiveRecord::SchemaMigration Load (2.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (25.1ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", true], ["created_at", Fri, 05 Feb 2016 05:58:08 UTC +00:00], ["email", "tessa@example.com"], ["firstname", "Tessa"], ["lastname", "Kruger"], ["password_digest", "$2a$10$t5DLW8W.h1ucGIIumA/OY.HC5ciaOh3J6wvj9Hsjj5l8R/YJ1Ea5i"], ["updated_at", Fri, 05 Feb 2016 05:58:08 UTC +00:00]]
+  [1m[35m (4.1ms)[0m  commit transaction
+  [1m[36mUser Load (2.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (22.0ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", true], ["created_at", Fri, 05 Feb 2016 05:58:35 UTC +00:00], ["email", "tessa@example.com"], ["firstname", "Tessa"], ["lastname", "Kruger"], ["password_digest", "$2a$10$W8a1fu1OIx91ZvueodKgGeNpFrR6BW8Bb7Y2OryR9xguFQ8b0PZoO"], ["updated_at", Fri, 05 Feb 2016 05:58:35 UTC +00:00]]
+  [1m[35m (4.6ms)[0m  commit transaction
+  [1m[36mUser Load (2.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (8.7ms)[0m  DELETE FROM "users"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (24.3ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", true], ["created_at", Fri, 05 Feb 2016 06:00:49 UTC +00:00], ["email", "tessa@example.com"], ["firstname", "Tessa"], ["lastname", "Kruger"], ["password_digest", "$2a$10$wk.r0BcriJva2kIA0Y97gOedskhZp4n2MRw1yuxkx5jQGn0p0etZ."], ["updated_at", Fri, 05 Feb 2016 06:00:49 UTC +00:00]]
+  [1m[36m (3.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (2.3ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mActiveRecord::SchemaMigration Load (2.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (7.7ms)[0m  DELETE FROM "users"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (22.4ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", true], ["created_at", Fri, 05 Feb 2016 06:05:23 UTC +00:00], ["email", "tessa@example.com"], ["firstname", "Tessa"], ["lastname", "Kruger"], ["password_digest", "$2a$10$t1mdKCS/dFBv1vgiWUWFPO4JTH.XcNdr9Lb3syfbdRevEuZD9NWZ2"], ["updated_at", Fri, 05 Feb 2016 06:05:23 UTC +00:00]]
+  [1m[36m (5.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.9ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", true], ["created_at", Fri, 05 Feb 2016 06:05:23 UTC +00:00], ["email", "opal_hermann@lindgrenullrich.biz"], ["firstname", "Alek"], ["lastname", "Emard"], ["password_digest", "$2a$10$C/AbLJkhnilxQ0OBubiCr.MGXi8UM48BqlHWKpQT/BoMys8KwrSi6"], ["updated_at", Fri, 05 Feb 2016 06:05:23 UTC +00:00]]
+  [1m[35m (4.7ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (8.1ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", true], ["created_at", Fri, 05 Feb 2016 06:05:23 UTC +00:00], ["email", "carolyn_mccullough@rohan.io"], ["firstname", "Glenda"], ["lastname", "Stiedemann"], ["password_digest", "$2a$10$FqqMp9q2VdxUp3GzVNojf.FX1rMoBwMgUBQ2.Zm3P0QGPh5Cg8qSC"], ["updated_at", Fri, 05 Feb 2016 06:05:23 UTC +00:00]]
+  [1m[36m (3.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (6.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", true], ["created_at", Fri, 05 Feb 2016 06:05:23 UTC +00:00], ["email", "stefan.pagac@brown.net"], ["firstname", "Enola"], ["lastname", "Kunze"], ["password_digest", "$2a$10$IbkfMoAkB9EzGWnR3BX73.osTO.D2.0tfaGIkhBI.jvgjI5EXliA."], ["updated_at", Fri, 05 Feb 2016 06:05:23 UTC +00:00]]
+  [1m[35m (5.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (4.7ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", true], ["created_at", Fri, 05 Feb 2016 06:05:24 UTC +00:00], ["email", "cortez_pollich@hayes.co"], ["firstname", "Therese"], ["lastname", "Feil"], ["password_digest", "$2a$10$LEUNLGmZr1Wn4Ph7YRyRHeh3TUu6Yo2GNdjkF/UIuql2HoKJTq0YG"], ["updated_at", Fri, 05 Feb 2016 06:05:24 UTC +00:00]]
+  [1m[36m (3.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (7.5ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", true], ["created_at", Fri, 05 Feb 2016 06:05:24 UTC +00:00], ["email", "evans@langworth.io"], ["firstname", "Laurie"], ["lastname", "Orn"], ["password_digest", "$2a$10$AD5iAiJCkdT2EEeW9b/Gt.8/bv7aUE6DPItPPoU53J9i9xDvtyk1O"], ["updated_at", Fri, 05 Feb 2016 06:05:24 UTC +00:00]]
+  [1m[35m (3.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (6.1ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", true], ["created_at", Fri, 05 Feb 2016 06:05:24 UTC +00:00], ["email", "sibyl@muraziklittel.org"], ["firstname", "Florine"], ["lastname", "Connelly"], ["password_digest", "$2a$10$MqWYD6tZ4IxSkPbnI/DzneGg2GiX2Iy7.1SBrKtfommzM61im9pT2"], ["updated_at", Fri, 05 Feb 2016 06:05:24 UTC +00:00]]
+  [1m[36m (4.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (5.7ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", true], ["created_at", Fri, 05 Feb 2016 06:05:24 UTC +00:00], ["email", "ryleigh.strosin@nicolas.com"], ["firstname", "Jeffrey"], ["lastname", "Koepp"], ["password_digest", "$2a$10$8TlyPgEHByDh19fLRL18c.yExgzuf9/vfbkmCs0wOR/EDYybq3iZe"], ["updated_at", Fri, 05 Feb 2016 06:05:24 UTC +00:00]]
+  [1m[35m (99.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (5.4ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", true], ["created_at", Fri, 05 Feb 2016 06:05:24 UTC +00:00], ["email", "joany.mayert@hamill.info"], ["firstname", "Carolanne"], ["lastname", "Abbott"], ["password_digest", "$2a$10$.YkaNyC2ledJe8m2OnFDC.vepkx/bmdfU7wIBujTCwkXPkBDE2S22"], ["updated_at", Fri, 05 Feb 2016 06:05:24 UTC +00:00]]
+  [1m[36m (6.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (5.2ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Fri, 05 Feb 2016 06:05:24 UTC +00:00], ["email", "tyrese@abbott.co"], ["firstname", "Dena"], ["lastname", "Huel"], ["password_digest", "$2a$10$p3pafMD2/qY3TKPCEiyhru2U0dtC6kQyBA0KRkYbzhf/FT41r7G4S"], ["updated_at", Fri, 05 Feb 2016 06:05:24 UTC +00:00]]
+  [1m[35m (4.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (6.7ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", true], ["created_at", Fri, 05 Feb 2016 06:05:24 UTC +00:00], ["email", "cheyanne.collins@brekkebatz.biz"], ["firstname", "Zion"], ["lastname", "Welch"], ["password_digest", "$2a$10$PdK/qmX5GhKUAplpPKQWGOdPAV3k0RTh4HGFMYf605JP8pMeEPUhy"], ["updated_at", Fri, 05 Feb 2016 06:05:24 UTC +00:00]]
+  [1m[36m (3.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (6.4ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", true], ["created_at", Fri, 05 Feb 2016 06:05:24 UTC +00:00], ["email", "cory.friesen@gutkowski.co"], ["firstname", "Izabella"], ["lastname", "Konopelski"], ["password_digest", "$2a$10$2Z3rQiUO0hGJNqlUwUW6De4EKDrjSoaMUTKqG8O3fbDvL93vf4Bsu"], ["updated_at", Fri, 05 Feb 2016 06:05:24 UTC +00:00]]
+  [1m[35m (4.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (6.5ms)[0m  INSERT INTO "users" ("created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Fri, 05 Feb 2016 06:05:25 UTC +00:00], ["email", "odell.lakin@mayert.name"], ["firstname", "Maia"], ["lastname", "Hane"], ["password_digest", "$2a$10$diRmFrYGRXGmBHU89RA2WedgBATETBiDmUp6Wc9e2v4EfSdtSXSqe"], ["updated_at", Fri, 05 Feb 2016 06:05:25 UTC +00:00]]
+  [1m[36m (5.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (5.5ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Fri, 05 Feb 2016 06:05:25 UTC +00:00], ["email", "sebastian.abernathy@lesch.name"], ["firstname", "Amara"], ["lastname", "Hermiston"], ["password_digest", "$2a$10$6YuSFD6zNH4bFq4PzKOxhOftzffTNm3HLhSjYhiKoEkUCG7pMsu0."], ["updated_at", Fri, 05 Feb 2016 06:05:25 UTC +00:00]]
+  [1m[35m (3.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (9.2ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", true], ["created_at", Fri, 05 Feb 2016 06:05:25 UTC +00:00], ["email", "jazmyn_kiehn@blockhintz.info"], ["firstname", "Amy"], ["lastname", "Roberts"], ["password_digest", "$2a$10$k8FiCBGUwpRSedHkd.rDCe1Kh4CqdyU6c5QAdYwkqe239/joArktO"], ["updated_at", Fri, 05 Feb 2016 06:05:25 UTC +00:00]]
+  [1m[36m (5.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.5ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.7ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Fri, 05 Feb 2016 06:05:25 UTC +00:00], ["email", "hailee_berge@lemkefunk.org"], ["firstname", "Montana"], ["lastname", "Mayer"], ["password_digest", "$2a$10$d6X/UN9FxAplcWVYbUHOlOGscxJiAfFfRkZ8MRAUgagKmaXV34jOi"], ["updated_at", Fri, 05 Feb 2016 06:05:25 UTC +00:00]]
+  [1m[35m (3.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (7.2ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", true], ["created_at", Fri, 05 Feb 2016 06:05:25 UTC +00:00], ["email", "verlie.robel@rowe.info"], ["firstname", "Macie"], ["lastname", "Cruickshank"], ["password_digest", "$2a$10$msExLqI7vqsPALTeLcmLIuxZCf2MXAVTe94iAlOU1etvwg2HIGFfe"], ["updated_at", Fri, 05 Feb 2016 06:05:25 UTC +00:00]]
+  [1m[36m (3.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (5.5ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", true], ["created_at", Fri, 05 Feb 2016 06:05:25 UTC +00:00], ["email", "elza_hansen@wyman.com"], ["firstname", "Monty"], ["lastname", "Smitham"], ["password_digest", "$2a$10$5kX1sUPlI/vPLrF8nWn1..mEB35gH5yEzVX5Bw9FS9RVCkK08mJrS"], ["updated_at", Fri, 05 Feb 2016 06:05:25 UTC +00:00]]
+  [1m[35m (3.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (5.8ms)[0m  INSERT INTO "users" ("created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Fri, 05 Feb 2016 06:05:25 UTC +00:00], ["email", "ansley@connelly.info"], ["firstname", "Norwood"], ["lastname", "Tillman"], ["password_digest", "$2a$10$Uz2PuWgKWs/lOUvBiwTQ4.8tXIyD7DKR1cFcMKj.dEnLIg35fwE42"], ["updated_at", Fri, 05 Feb 2016 06:05:25 UTC +00:00]]
+  [1m[36m (3.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.8ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Fri, 05 Feb 2016 06:05:25 UTC +00:00], ["email", "bettye_orn@maggio.com"], ["firstname", "Hunter"], ["lastname", "Gulgowski"], ["password_digest", "$2a$10$Hd2tP1sHDCZLHIxSLp3Gaeg.xx25xhOs8kHUqj1b/1G02JYp58N9."], ["updated_at", Fri, 05 Feb 2016 06:05:25 UTC +00:00]]
+  [1m[35m (3.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (6.6ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", true], ["created_at", Fri, 05 Feb 2016 06:05:26 UTC +00:00], ["email", "cristina@grimeshartmann.info"], ["firstname", "Glenda"], ["lastname", "Crooks"], ["password_digest", "$2a$10$ROzjS4JtBVMEgy3PiDd.euAsmQECa4H.sJfT5tx.jupl0MhOEilp."], ["updated_at", Fri, 05 Feb 2016 06:05:26 UTC +00:00]]
+  [1m[36m (3.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (5.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Fri, 05 Feb 2016 06:05:26 UTC +00:00], ["email", "concepcion@stokesbayer.biz"], ["firstname", "Jake"], ["lastname", "Spencer"], ["password_digest", "$2a$10$dOwSsl6S6Io8n57rkVaJmOhaCgynTfY7iw.K3XmqJ3Bua6kVmgUta"], ["updated_at", Fri, 05 Feb 2016 06:05:26 UTC +00:00]]
+  [1m[35m (4.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (4.6ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", true], ["created_at", Fri, 05 Feb 2016 06:05:26 UTC +00:00], ["email", "rowland@murazikmertz.io"], ["firstname", "Zackery"], ["lastname", "McCullough"], ["password_digest", "$2a$10$eaN8j9nrkyW/qX44XdNxwe/R9WE/6eJyXnQKtPmbpGetNAzwgE3r."], ["updated_at", Fri, 05 Feb 2016 06:05:26 UTC +00:00]]
+  [1m[36m (3.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (6.3ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Fri, 05 Feb 2016 06:05:26 UTC +00:00], ["email", "ona@lind.co"], ["firstname", "Terrell"], ["lastname", "Streich"], ["password_digest", "$2a$10$JO7XnR5jWANtYvsfSnWrh.xf9SNt5hjga31ai0goUBSUAGcAF9LYi"], ["updated_at", Fri, 05 Feb 2016 06:05:26 UTC +00:00]]
+  [1m[35m (5.0ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (5.5ms)[0m  INSERT INTO "users" ("created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Fri, 05 Feb 2016 06:05:26 UTC +00:00], ["email", "tabitha_stark@kuvalisjacobson.co"], ["firstname", "Eloisa"], ["lastname", "Blick"], ["password_digest", "$2a$10$gofN5xzt7mBzse.25ES2vuiXyVdl9TnKxJUDgaggkMOMBC9FF.unG"], ["updated_at", Fri, 05 Feb 2016 06:05:26 UTC +00:00]]
+  [1m[36m (3.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (7.7ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", true], ["created_at", Fri, 05 Feb 2016 06:05:26 UTC +00:00], ["email", "zoey@frami.org"], ["firstname", "Alba"], ["lastname", "Okuneva"], ["password_digest", "$2a$10$XzcmmzYvflt0qUyKVuzESed6v5khTugUtEH0.AHaG4e5PVTZJdKyC"], ["updated_at", Fri, 05 Feb 2016 06:05:26 UTC +00:00]]
+  [1m[35m (3.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (4.9ms)[0m  INSERT INTO "users" ("created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Fri, 05 Feb 2016 06:05:26 UTC +00:00], ["email", "xavier@bartolettirutherford.io"], ["firstname", "Monroe"], ["lastname", "Schmitt"], ["password_digest", "$2a$10$o1aMejiURxI19uodaShuVO7X/4tBOxWu1wfaC1QRBNQ2RDLe/LAOG"], ["updated_at", Fri, 05 Feb 2016 06:05:26 UTC +00:00]]
+  [1m[36m (3.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.5ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Fri, 05 Feb 2016 06:05:26 UTC +00:00], ["email", "susana_smitham@ruecker.org"], ["firstname", "Waylon"], ["lastname", "Reichel"], ["password_digest", "$2a$10$YSpNYUN2i63aVXsBarXREe4TeuYqkjdPjXR3G8XIs7thjN6bB9a56"], ["updated_at", Fri, 05 Feb 2016 06:05:26 UTC +00:00]]
+  [1m[35m (3.4ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (5.1ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", true], ["created_at", Fri, 05 Feb 2016 06:05:26 UTC +00:00], ["email", "arely_prohaska@deckow.co"], ["firstname", "Myrtice"], ["lastname", "Hermiston"], ["password_digest", "$2a$10$85Y/BfmGtQBExmfapujfp.p4Lx4iXozMXrtcXUUNeKBloarsXo45S"], ["updated_at", Fri, 05 Feb 2016 06:05:26 UTC +00:00]]
+  [1m[36m (5.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (8.2ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", true], ["created_at", Fri, 05 Feb 2016 06:05:27 UTC +00:00], ["email", "sarina.schoen@kubjacobs.biz"], ["firstname", "Llewellyn"], ["lastname", "Abbott"], ["password_digest", "$2a$10$32rYnV0PH/apolYOOTrXFuRLMJ9jeu9tuDg2R9ild9ZCB3nPKWLnK"], ["updated_at", Fri, 05 Feb 2016 06:05:27 UTC +00:00]]
+  [1m[35m (4.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (5.5ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", true], ["created_at", Fri, 05 Feb 2016 06:05:27 UTC +00:00], ["email", "chelsey.nader@swift.com"], ["firstname", "Jordon"], ["lastname", "Dach"], ["password_digest", "$2a$10$8VT.CrQySimPsRfvCnOiCeL0z8.q.tOLVM/BM3qGe1RkvhVmDKx/C"], ["updated_at", Fri, 05 Feb 2016 06:05:27 UTC +00:00]]
+  [1m[36m (3.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.8ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", true], ["created_at", Fri, 05 Feb 2016 06:05:27 UTC +00:00], ["email", "stevie@nitzscheswift.io"], ["firstname", "Kieran"], ["lastname", "Williamson"], ["password_digest", "$2a$10$njmqJ5tjk7QwA63NKvPAe.OcLVjJwUHegFFjoOxT20AFz0PatOT0O"], ["updated_at", Fri, 05 Feb 2016 06:05:27 UTC +00:00]]
+  [1m[35m (4.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (6.0ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", true], ["created_at", Fri, 05 Feb 2016 06:05:27 UTC +00:00], ["email", "guadalupe@hayes.com"], ["firstname", "Zackary"], ["lastname", "Nikolaus"], ["password_digest", "$2a$10$HsxQSJdYyQj71BVA6c8nwehH1M7vqXgSqiBzZ6kVLQs5Ts8WTXGIe"], ["updated_at", Fri, 05 Feb 2016 06:05:27 UTC +00:00]]
+  [1m[36m (3.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (5.4ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", true], ["created_at", Fri, 05 Feb 2016 06:05:27 UTC +00:00], ["email", "jon.bergnaum@ohara.name"], ["firstname", "Hassan"], ["lastname", "Kreiger"], ["password_digest", "$2a$10$6zGxVPnmWMJHxDE2TOYMquW.4Tm/PMndRA1MQNpKzbtP9Yyl3fR62"], ["updated_at", Fri, 05 Feb 2016 06:05:27 UTC +00:00]]
+  [1m[35m (3.3ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (8.8ms)[0m  INSERT INTO "users" ("created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Fri, 05 Feb 2016 06:05:27 UTC +00:00], ["email", "charlene.toy@fisherwalsh.net"], ["firstname", "Margret"], ["lastname", "Hayes"], ["password_digest", "$2a$10$jihS81NSpLy78ZwStDyUPOXQYQVW9W/SjPiB8zpECs5BheEjexsNC"], ["updated_at", Fri, 05 Feb 2016 06:05:27 UTC +00:00]]
+  [1m[36m (3.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (5.2ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", true], ["created_at", Fri, 05 Feb 2016 06:05:27 UTC +00:00], ["email", "colton.yost@lowe.io"], ["firstname", "Grady"], ["lastname", "Rempel"], ["password_digest", "$2a$10$C9/zTVmfMgw1zN2Z25GfNO33UOQFt52WM.tQvNwRiIFdLSWCLh2hy"], ["updated_at", Fri, 05 Feb 2016 06:05:27 UTC +00:00]]
+  [1m[35m (3.4ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (7.1ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", true], ["created_at", Fri, 05 Feb 2016 06:05:27 UTC +00:00], ["email", "eugene.walsh@lubowitz.io"], ["firstname", "Raymundo"], ["lastname", "Grant"], ["password_digest", "$2a$10$3h/owge23hRyw8ukRSMvEe7YsNk.gGMD1AMFKV/2eFVeJ/dEv1iBm"], ["updated_at", Fri, 05 Feb 2016 06:05:27 UTC +00:00]]
+  [1m[36m (4.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.7ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", true], ["created_at", Fri, 05 Feb 2016 06:05:28 UTC +00:00], ["email", "ariel@keebler.org"], ["firstname", "Dante"], ["lastname", "Dickens"], ["password_digest", "$2a$10$5sAyMMhpsB3VgGp7O9Zx0.RL7J8v3NDAS8fM.dbFEZkmxbM3BM8ZW"], ["updated_at", Fri, 05 Feb 2016 06:05:28 UTC +00:00]]
+  [1m[35m (3.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (5.0ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", true], ["created_at", Fri, 05 Feb 2016 06:05:28 UTC +00:00], ["email", "jarrell.bogisich@borerdamore.co"], ["firstname", "Angus"], ["lastname", "Cummerata"], ["password_digest", "$2a$10$W7TGriy4egc0LiVPJ6qpn.RA4zGofGVwL6AhCB35W5/RUAU6lF7Ey"], ["updated_at", Fri, 05 Feb 2016 06:05:28 UTC +00:00]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (5.8ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Fri, 05 Feb 2016 06:05:28 UTC +00:00], ["email", "lucienne.doyle@ohara.name"], ["firstname", "Misty"], ["lastname", "Kirlin"], ["password_digest", "$2a$10$..emErOKOna0fqMWhGk6dek8nXBiS56q8/r1zxpvc6qSQcHnJUhMG"], ["updated_at", Fri, 05 Feb 2016 06:05:28 UTC +00:00]]
+  [1m[35m (3.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (8.7ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", true], ["created_at", Fri, 05 Feb 2016 06:05:28 UTC +00:00], ["email", "darrion@dooley.info"], ["firstname", "Easton"], ["lastname", "Boyle"], ["password_digest", "$2a$10$lkNAQ.3Rdv3Sh40U6Ytudud3WSB1KsP6/BWRQwGTXnBpkv26vOVlO"], ["updated_at", Fri, 05 Feb 2016 06:05:28 UTC +00:00]]
+  [1m[36m (4.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.9ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Fri, 05 Feb 2016 06:05:28 UTC +00:00], ["email", "hallie.muller@sauer.io"], ["firstname", "Zoe"], ["lastname", "Botsford"], ["password_digest", "$2a$10$3SNCkVw9JsVRKtS.boP.S..CDB6rUU/QjMHW5vICEg4wDlzRVkd7K"], ["updated_at", Fri, 05 Feb 2016 06:05:28 UTC +00:00]]
+  [1m[35m (3.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (5.1ms)[0m  INSERT INTO "users" ("created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Fri, 05 Feb 2016 06:05:28 UTC +00:00], ["email", "isadore.schumm@baumbach.org"], ["firstname", "Jordane"], ["lastname", "Lesch"], ["password_digest", "$2a$10$S61J4C3j8J03DPR6nDMRI.tnFYhTJxklxbEHgUzZgJBWZ9kUZ/wry"], ["updated_at", Fri, 05 Feb 2016 06:05:28 UTC +00:00]]
+  [1m[36m (3.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (6.1ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", true], ["created_at", Fri, 05 Feb 2016 06:05:28 UTC +00:00], ["email", "paolo@ward.org"], ["firstname", "Llewellyn"], ["lastname", "Schaden"], ["password_digest", "$2a$10$2OaveCjR0z61LGiob0FYqeucLUXqbClDTwQ3edj73UOHHlfGwUJnm"], ["updated_at", Fri, 05 Feb 2016 06:05:28 UTC +00:00]]
+  [1m[35m (3.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (4.9ms)[0m  INSERT INTO "users" ("created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Fri, 05 Feb 2016 06:05:28 UTC +00:00], ["email", "evan@borer.io"], ["firstname", "Mckenna"], ["lastname", "Conn"], ["password_digest", "$2a$10$./s8O0Mnwti2Y9u1iVHh6eIVqAc4QaBedDNXKA02OsmTk67iykaEG"], ["updated_at", Fri, 05 Feb 2016 06:05:28 UTC +00:00]]
+  [1m[36m (3.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.5ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (6.7ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Fri, 05 Feb 2016 06:05:28 UTC +00:00], ["email", "madeline@kerlukewatsica.co"], ["firstname", "Keegan"], ["lastname", "Cronin"], ["password_digest", "$2a$10$HwT2R3c3VABcpRwaWzqY8e2hD3Fptzv6YFkLlp3i/rZRteAUT36de"], ["updated_at", Fri, 05 Feb 2016 06:05:28 UTC +00:00]]
+  [1m[35m (4.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (6.6ms)[0m  INSERT INTO "users" ("created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Fri, 05 Feb 2016 06:05:29 UTC +00:00], ["email", "glenna@schumm.com"], ["firstname", "Kayli"], ["lastname", "Farrell"], ["password_digest", "$2a$10$aziSHdwkXQ.CVyOOHGzU8.mXJZ9UQ3a/mkuXZNsmDjyqO/ZKcryHe"], ["updated_at", Fri, 05 Feb 2016 06:05:29 UTC +00:00]]
+  [1m[36m (4.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.9ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", true], ["created_at", Fri, 05 Feb 2016 06:05:29 UTC +00:00], ["email", "carolina@swaniawski.name"], ["firstname", "Zackery"], ["lastname", "McLaughlin"], ["password_digest", "$2a$10$a6n1Dx4IqCj8JGxiz19gp.BpixZXbyeKmKhbS7sdbLaRJoV.rX2h."], ["updated_at", Fri, 05 Feb 2016 06:05:29 UTC +00:00]]
+  [1m[35m (4.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (9.7ms)[0m  INSERT INTO "users" ("created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Fri, 05 Feb 2016 06:05:29 UTC +00:00], ["email", "thea.buckridge@anderson.co"], ["firstname", "Mallie"], ["lastname", "Marquardt"], ["password_digest", "$2a$10$rGBhUm0SoOiDThMqdQlHR.b7u2w/DWWT74AXOzmgb6wQGbKrLbaYS"], ["updated_at", Fri, 05 Feb 2016 06:05:29 UTC +00:00]]
+  [1m[36m (3.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (5.4ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Fri, 05 Feb 2016 06:05:29 UTC +00:00], ["email", "shawna@murazik.co"], ["firstname", "Dessie"], ["lastname", "Gleichner"], ["password_digest", "$2a$10$4DU3.woEyUVHz4RXYxpot..B5spvDT264gz.9OPGhrrC9eyGm6rD2"], ["updated_at", Fri, 05 Feb 2016 06:05:29 UTC +00:00]]
+  [1m[35m (3.3ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (5.2ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", true], ["created_at", Fri, 05 Feb 2016 06:05:29 UTC +00:00], ["email", "kennith@littel.io"], ["firstname", "Noelia"], ["lastname", "Parker"], ["password_digest", "$2a$10$73hlHpES8kcWxKkBxmLKke7IeOFBTcTi7Z2hXczs5WeZN2T3Y1yQK"], ["updated_at", Fri, 05 Feb 2016 06:05:29 UTC +00:00]]
+  [1m[36m (3.3ms)[0m  [1mcommit transaction[0m
