@@ -17,14 +17,17 @@ class Movie < ActiveRecord::Base
   validates :release_date,
     presence: true
 
-  validates :poster_image_url,
-    presence: true, unless: ->(movie){ movie.image.present? }
+  validates_presence_of :poster_image_url,
+    allow_nil: true
 
-  validates :image,
-    presence: true, unless: ->(movie){ movie.poster_image_url.present? }
+  validates_presence_of :image,
+    allow_nil: true
 
   validate :release_date_is_in_the_past
 
+  validate :image_size_validation
+
+  validate :image_xor_poster_url
 
   def review_average
     if reviews.size > 0
@@ -39,6 +42,16 @@ class Movie < ActiveRecord::Base
   def release_date_is_in_the_past
     if release_date.present?
       errors.add(:release_date, "should be in the past") if release_date > Date.today
+    end
+  end
+
+  def image_size_validation
+    errors[:image] << "should be less than 500kb" if image.size > 0.5.megabytes
+  end
+
+  def image_xor_poster_url
+    unless image.blank? ^ poster_image_url.blank?
+      errors.add(:base, "Upload an image or enter an image URL, not both")
     end
   end
 
