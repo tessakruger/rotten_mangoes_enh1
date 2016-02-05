@@ -29,13 +29,13 @@ class Movie < ActiveRecord::Base
 
   validate :image_xor_poster_url
 
+  mount_uploader :image, ImageUploader # mount_uploader = method; :image = column name in movies table; ImageUploader = image_uploader.rb in app/uploaders
+
   def review_average
     if reviews.size > 0
       reviews.sum(:rating_out_of_ten)/reviews.size
     end
   end
-
-  mount_uploader :image, ImageUploader # mount_uploader = method; :image = column name in movies table; ImageUploader = image_uploader.rb in app/uploaders
 
   protected
 

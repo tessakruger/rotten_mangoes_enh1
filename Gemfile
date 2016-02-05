@@ -55,3 +55,7 @@ gem 'kaminari'
 
 # Seeding database with fake data
 gem 'faker'
+
+group :development do
+  gem 'web-console'
+end

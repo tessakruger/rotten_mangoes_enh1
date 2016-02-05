@@ -1,8 +1,9 @@
 class Admin::UsersController < ApplicationController
 
-  def index
-    render text: "Hey admin"
-  end
+	def index
+	  @users = User.all
+	  @users = User.order(:firstname).page params[:page]
+	end
 
   def new
     render text: "This is an admin page"
