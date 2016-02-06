@@ -46,7 +46,7 @@ User.all.each do |u|
     director = Faker::Name.name
     runtime_in_minutes = rand(45..180)
     description = Faker::Hipster.paragraph
-    poster_image_url = ["http://lorempixel.com/120/200/abstract", "http://lorempixel.com/120/200/sports", "http://lorempixel.com/120/200/cats"].sample
+    poster_image_url = ["http://lorempixel.com/150/150/abstract", "http://lorempixel.com/150/150/sports", "http://lorempixel.com/150/150/cats"].sample
     release_date = Faker::Date.backward(600)
 
     u.movies.create!(

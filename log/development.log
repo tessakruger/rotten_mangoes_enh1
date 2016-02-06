@@ -20705,3 +20705,711 @@ Started GET "/assets/users.js?body=1" for 10.0.2.2 at 2016-02-05 23:26:07 +0000
 
 
 Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2016-02-05 23:26:07 +0000
+
+
+Started GET "/movies" for 10.0.2.2 at 2016-02-06 00:11:50 +0000
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (2.9ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (105.6ms)
+Completed 500 Internal Server Error in 221ms
+
+ActionView::Template::Error (undefined method `total_pages' for #<ActiveRecord::Relation::ActiveRecord_Relation_Movie:0xb5110f84>):
+    10: 	<p><%= movie.description %></p>
+    11: <% end %>
+    12: 
+    13: <%= paginate @movies %>
+    14: <hr>
+  app/views/movies/index.html.erb:13:in `_app_views_movies_index_html_erb___984491551__628588318'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (21.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (45.6ms)
+
+
+Started GET "/movies" for 10.0.2.2 at 2016-02-06 00:11:50 +0000
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (3.0ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (113.3ms)
+Completed 500 Internal Server Error in 227ms
+
+ActionView::Template::Error (undefined method `total_pages' for #<ActiveRecord::Relation::ActiveRecord_Relation_Movie:0xa9d2b14>):
+    10: 	<p><%= movie.description %></p>
+    11: <% end %>
+    12: 
+    13: <%= paginate @movies %>
+    14: <hr>
+  app/views/movies/index.html.erb:13:in `_app_views_movies_index_html_erb___984491551__628588318'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (21.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (21.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (47.0ms)
+
+
+Started GET "/movies" for 10.0.2.2 at 2016-02-06 00:12:01 +0000
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (2.5ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (121.6ms)
+Completed 500 Internal Server Error in 213ms
+
+ActionView::Template::Error (undefined local variable or method `movies' for #<#<Class:0xb57cfd5c>:0xb55b8230>):
+    10: 	<p><%= movie.description %></p>
+    11: <% end %>
+    12: 
+    13: <%= paginate movies %>
+    14: <hr>
+  app/views/movies/index.html.erb:13:in `_app_views_movies_index_html_erb___984491551__626165558'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (20.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (44.6ms)
+
+
+Started GET "/movies" for 10.0.2.2 at 2016-02-06 00:13:31 +0000
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (2.8ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (101.3ms)
+Completed 500 Internal Server Error in 187ms
+
+ActionView::Template::Error (undefined method `total_pages' for #<ActiveRecord::Relation::ActiveRecord_Relation_Movie:0xb4fa8a84>):
+    10: 	<p><%= movie.description %></p>
+    11: <% end %>
+    12: 
+    13: <%= paginate @movies %>
+    14: <hr>
+  app/views/movies/index.html.erb:13:in `_app_views_movies_index_html_erb___984491551__629335788'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (19.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (40.8ms)
+
+
+Started GET "/movies" for 10.0.2.2 at 2016-02-06 00:19:28 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (2.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (7.9ms)[0m  SELECT "movies".* FROM "movies" ORDER BY "movies".title ASC LIMIT 10 OFFSET 0
+  [1m[36m (2.6ms)[0m  [1mSELECT COUNT(*) FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (795.4ms)
+  Rendered layouts/_footer.html.erb (1.8ms)
+Completed 200 OK in 1669ms (Views: 1501.0ms | ActiveRecord: 13.3ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 10.0.2.2 at 2016-02-06 00:19:31 +0000
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2016-02-06 00:19:31 +0000
+
+
+Started GET "/assets/movies.css?body=1" for 10.0.2.2 at 2016-02-06 00:19:31 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2016-02-06 00:19:31 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2016-02-06 00:19:32 +0000
+
+
+Started GET "/assets/users.css?body=1" for 10.0.2.2 at 2016-02-06 00:19:32 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2016-02-06 00:19:32 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2016-02-06 00:19:32 +0000
+
+
+Started GET "/assets/movies.js?body=1" for 10.0.2.2 at 2016-02-06 00:19:32 +0000
+
+
+Started GET "/assets/reviews.js?body=1" for 10.0.2.2 at 2016-02-06 00:19:32 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2016-02-06 00:19:32 +0000
+
+
+Started GET "/assets/users.js?body=1" for 10.0.2.2 at 2016-02-06 00:19:32 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2016-02-06 00:19:32 +0000
+  [1m[36m (8.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (50.0ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (3.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateMovies (20160201225724)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (4.4ms)[0m  [1mCREATE TABLE "movies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "director" varchar(255), "runtime_in_minutes" integer, "description" text, "poster_image_url" varchar(255), "release_date" datetime, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160201225724"]]
+  [1m[36m (3.7ms)[0m  [1mcommit transaction[0m
+Migrating to CreateUsers (20160202015641)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (5.4ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255), "password_digest" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (1.8ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160202015641"]]
+  [1m[36m (3.2ms)[0m  [1mcommit transaction[0m
+Migrating to AddNameFieldsToUsers (20160202020648)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (4.6ms)[0m  [1mALTER TABLE "users" ADD "firstname" varchar(255)[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "users" ADD "lastname" varchar(255)
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160202020648"]]
+  [1m[35m (3.5ms)[0m  commit transaction
+Migrating to CreateReviews (20160202181710)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (6.4ms)[0m  CREATE TABLE "reviews" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "movie_id" integer, "text" text, "rating_out_of_ten" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.3ms)[0m  [1mCREATE INDEX "index_reviews_on_user_id" ON "reviews" ("user_id")[0m
+  [1m[35m (0.2ms)[0m  CREATE INDEX "index_reviews_on_movie_id" ON "reviews" ("movie_id")
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160202181710"]]
+  [1m[35m (4.3ms)[0m  commit transaction
+Migrating to AddImageColumnToMovies (20160204164138)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (5.2ms)[0m  ALTER TABLE "movies" ADD "image" varchar(255)
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160204164138"]]
+  [1m[35m (3.9ms)[0m  commit transaction
+Migrating to AddAdminToUsers (20160205003947)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (5.7ms)[0m  ALTER TABLE "users" ADD "admin" boolean DEFAULT 'f'
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160205003947"]]
+  [1m[35m (3.4ms)[0m  commit transaction
+Migrating to AddUsersIndexToMovies (20160205231525)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (5.8ms)[0m  ALTER TABLE "movies" ADD "user_id" integer
+  [1m[36m (1.2ms)[0m  [1mCREATE INDEX "index_movies_on_user_id" ON "movies" ("user_id")[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160205231525"]]
+  [1m[36m (4.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (1.9ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (2.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (7.9ms)[0m  DELETE FROM "users"
+  [1m[36mSQL (9.8ms)[0m  [1mDELETE FROM "movies"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (22.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", true], ["created_at", Sat, 06 Feb 2016 00:20:46 UTC +00:00], ["email", "tessa@example.com"], ["firstname", "Tessa"], ["lastname", "Kruger"], ["password_digest", "$2a$10$u87gQactYdb3fzplMdiM/.xsCFH4dKyqdHpqduQRFnDihW.NB2Lcu"], ["updated_at", Sat, 06 Feb 2016 00:20:46 UTC +00:00]]
+  [1m[35m (3.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (5.2ms)[0m  INSERT INTO "users" ("created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Sat, 06 Feb 2016 00:20:46 UTC +00:00], ["email", "tessa2@example.com"], ["firstname", "T"], ["lastname", "K"], ["password_digest", "$2a$10$Sx7lg2vPnA0SMuU8tIGuBulz.TXS/kaRtditc1xMGi7Rcpx1F/J02"], ["updated_at", Sat, 06 Feb 2016 00:20:46 UTC +00:00]]
+  [1m[36m (3.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.5ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", true], ["created_at", Sat, 06 Feb 2016 00:20:46 UTC +00:00], ["email", "hester.lynch@connellyklocko.biz"], ["firstname", "Judd"], ["lastname", "Stanton"], ["password_digest", "$2a$10$9p.V27t4W2znwdJgt/86JOjU0Dzbh.FVVfUT9W1.wu7.Dpv73UkrG"], ["updated_at", Sat, 06 Feb 2016 00:20:46 UTC +00:00]]
+  [1m[35m (4.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (5.1ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", true], ["created_at", Sat, 06 Feb 2016 00:20:47 UTC +00:00], ["email", "concepcion.weimann@parisian.name"], ["firstname", "Ila"], ["lastname", "Brekke"], ["password_digest", "$2a$10$IQ.vJYIM7QOCB/GrjOy4uOZVUPW3BHTu4/VPdYq4eeZPFLJP2QSay"], ["updated_at", Sat, 06 Feb 2016 00:20:47 UTC +00:00]]
+  [1m[36m (3.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (5.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 06 Feb 2016 00:20:47 UTC +00:00], ["email", "mason_abbott@donnellyherman.co"], ["firstname", "Raymond"], ["lastname", "Mertz"], ["password_digest", "$2a$10$ZaH72jVpscUXg6Krt31JUO3.tm29PFLdzruOoXhoRWAYh3jL90JMC"], ["updated_at", Sat, 06 Feb 2016 00:20:47 UTC +00:00]]
+  [1m[35m (3.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (4.5ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", true], ["created_at", Sat, 06 Feb 2016 00:20:47 UTC +00:00], ["email", "manuel_wuckert@raynorkilback.info"], ["firstname", "Marvin"], ["lastname", "Williamson"], ["password_digest", "$2a$10$33Efk8CWb8jn.jvrGRFCrOg1by76fOkMt5u/2LWUFkYKt5zq4MYz6"], ["updated_at", Sat, 06 Feb 2016 00:20:47 UTC +00:00]]
+  [1m[36m (3.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (8.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 06 Feb 2016 00:20:47 UTC +00:00], ["email", "dane@moriettekonopelski.com"], ["firstname", "Zelma"], ["lastname", "O'Reilly"], ["password_digest", "$2a$10$6U9IALlsxyDGx99jcJN8WOqg.rh.HpEX6136FwnQy.WTdq4vKb65i"], ["updated_at", Sat, 06 Feb 2016 00:20:47 UTC +00:00]]
+  [1m[35m (3.8ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (5.0ms)[0m  INSERT INTO "users" ("created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Sat, 06 Feb 2016 00:20:47 UTC +00:00], ["email", "rachelle@walsh.org"], ["firstname", "Ruby"], ["lastname", "Bogisich"], ["password_digest", "$2a$10$d1fYrZaU0nVY2YHjNhO23egH.VNYZpzO2/Cs15WI/TzEvDIIyvz16"], ["updated_at", Sat, 06 Feb 2016 00:20:47 UTC +00:00]]
+  [1m[36m (3.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (5.3ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 06 Feb 2016 00:20:47 UTC +00:00], ["email", "rickey.cartwright@heaneylueilwitz.biz"], ["firstname", "Stephanie"], ["lastname", "Friesen"], ["password_digest", "$2a$10$6nSLrUrxUdXOmymqHbLFP.q1D.R.HQmqTS.h9vtPgNZet9LIo58cq"], ["updated_at", Sat, 06 Feb 2016 00:20:47 UTC +00:00]]
+  [1m[35m (3.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (5.0ms)[0m  INSERT INTO "users" ("created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Sat, 06 Feb 2016 00:20:47 UTC +00:00], ["email", "phoebe@jastprosacco.io"], ["firstname", "Louie"], ["lastname", "Funk"], ["password_digest", "$2a$10$UaYecwI00ZFW1aV7s2gdAuu6FxKLGrJw/vI7.2h7mPTW6rwkd2H6q"], ["updated_at", Sat, 06 Feb 2016 00:20:47 UTC +00:00]]
+  [1m[36m (3.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (6.1ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 06 Feb 2016 00:20:47 UTC +00:00], ["email", "darron_ohara@turcottewitting.info"], ["firstname", "Adrianna"], ["lastname", "Littel"], ["password_digest", "$2a$10$WYV7hxfIrqZGyIauYWJiGO3/KwJFhKCk3HsxdRaRAXHyfw3tUop06"], ["updated_at", Sat, 06 Feb 2016 00:20:47 UTC +00:00]]
+  [1m[35m (5.0ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (5.1ms)[0m  INSERT INTO "users" ("created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Sat, 06 Feb 2016 00:20:47 UTC +00:00], ["email", "larue@wolf.name"], ["firstname", "Dagmar"], ["lastname", "Gulgowski"], ["password_digest", "$2a$10$mMJ7hC8IdRfqeDFJYEdNHO9ffQLkZd0LCI1yM9K3O7jG2P16r1ZMO"], ["updated_at", Sat, 06 Feb 2016 00:20:47 UTC +00:00]]
+  [1m[36m (3.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (5.3ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", true], ["created_at", Sat, 06 Feb 2016 00:20:48 UTC +00:00], ["email", "gretchen@gislasonklocko.biz"], ["firstname", "Audreanne"], ["lastname", "Gislason"], ["password_digest", "$2a$10$.P/is1nCiQzkX5jUaiUu/Oxg.4jnFeBT8h5Vg9HNZKxk..wCa.z3e"], ["updated_at", Sat, 06 Feb 2016 00:20:48 UTC +00:00]]
+  [1m[35m (3.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (4.7ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", true], ["created_at", Sat, 06 Feb 2016 00:20:48 UTC +00:00], ["email", "jaquelin@schiller.biz"], ["firstname", "Zola"], ["lastname", "Frami"], ["password_digest", "$2a$10$m6l7cWSG0ZDYh.owxrPhEOQK2pLFwXA04BEfgYLLH2zG5ZMelQcG."], ["updated_at", Sat, 06 Feb 2016 00:20:48 UTC +00:00]]
+  [1m[36m (3.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (5.4ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", true], ["created_at", Sat, 06 Feb 2016 00:20:48 UTC +00:00], ["email", "herbert@pfeffer.com"], ["firstname", "Edwina"], ["lastname", "Boehm"], ["password_digest", "$2a$10$LDucoNogkCKsPGiWUzsZ5ORMpUJxlyDy5hgbxMFetr08wD60O.Hvm"], ["updated_at", Sat, 06 Feb 2016 00:20:48 UTC +00:00]]
+  [1m[35m (3.2ms)[0m  commit transaction
+  [1m[36m (0.8ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (5.2ms)[0m  INSERT INTO "users" ("created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Sat, 06 Feb 2016 00:20:48 UTC +00:00], ["email", "noemi@dooleyharvey.io"], ["firstname", "Una"], ["lastname", "Wilkinson"], ["password_digest", "$2a$10$IxGzAlry1jiAnmYuEIzjXuO7TXwiGXgM.fna8bmO5GWvJRnjMibcK"], ["updated_at", Sat, 06 Feb 2016 00:20:48 UTC +00:00]]
+  [1m[36m (3.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (5.1ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 06 Feb 2016 00:20:48 UTC +00:00], ["email", "vicente.breitenberg@ko.info"], ["firstname", "Sammie"], ["lastname", "Kassulke"], ["password_digest", "$2a$10$gbhsRWJ6CXBa9A.ydan6EeHm0tL8biQdc1PkLMP08qjyKqLWdblAi"], ["updated_at", Sat, 06 Feb 2016 00:20:48 UTC +00:00]]
+  [1m[35m (4.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (5.2ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", true], ["created_at", Sat, 06 Feb 2016 00:20:48 UTC +00:00], ["email", "ophelia.connelly@berge.com"], ["firstname", "Elbert"], ["lastname", "Roberts"], ["password_digest", "$2a$10$d7MbhcF7EzOdVan4fGgZ0eOT7KARTRk1fDx5gOhymRdN3RtUrU1wa"], ["updated_at", Sat, 06 Feb 2016 00:20:48 UTC +00:00]]
+  [1m[36m (3.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (5.3ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 06 Feb 2016 00:20:48 UTC +00:00], ["email", "buck_ferry@stiedemann.info"], ["firstname", "Eliza"], ["lastname", "Kuhn"], ["password_digest", "$2a$10$oZYj/wDPoJdojAUduBE4TOK.F2vdcqyqIiCNWm1/PScN8DD8qCl52"], ["updated_at", Sat, 06 Feb 2016 00:20:48 UTC +00:00]]
+  [1m[35m (3.2ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (5.6ms)[0m  INSERT INTO "users" ("created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Sat, 06 Feb 2016 00:20:48 UTC +00:00], ["email", "onie@beatty.info"], ["firstname", "Eli"], ["lastname", "Flatley"], ["password_digest", "$2a$10$GtCRMhRXdT3rfYIbJe9w8uhCP2rgxEPVchDKfcxdu4oQG9lVxwZTa"], ["updated_at", Sat, 06 Feb 2016 00:20:48 UTC +00:00]]
+  [1m[36m (3.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (6.0ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", true], ["created_at", Sat, 06 Feb 2016 00:20:48 UTC +00:00], ["email", "lawrence_yost@schulistpadberg.name"], ["firstname", "Bartholome"], ["lastname", "Volkman"], ["password_digest", "$2a$10$pJDaoqDdFxjRfogJi6QjUuX3/PviU/ZhoVNkq7Y4C0zMaigVOlku6"], ["updated_at", Sat, 06 Feb 2016 00:20:48 UTC +00:00]]
+  [1m[35m (4.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (4.8ms)[0m  INSERT INTO "users" ("created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Sat, 06 Feb 2016 00:20:49 UTC +00:00], ["email", "meagan@medhurst.biz"], ["firstname", "Madilyn"], ["lastname", "Hoppe"], ["password_digest", "$2a$10$z/vapaiDUUY35jOn07epqurFaW7pIMe8vKImBVnqrKe/wP6jFBfN6"], ["updated_at", Sat, 06 Feb 2016 00:20:49 UTC +00:00]]
+  [1m[36m (3.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.6ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 06 Feb 2016 00:20:49 UTC +00:00], ["email", "reuben.larson@harris.biz"], ["firstname", "Chanel"], ["lastname", "Conroy"], ["password_digest", "$2a$10$yI0TQqlzr7MfVnJMjVWU4O6DFcgBzPFZcEx1A314X6XdZqq5lUg9u"], ["updated_at", Sat, 06 Feb 2016 00:20:49 UTC +00:00]]
+  [1m[35m (3.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (4.8ms)[0m  INSERT INTO "users" ("created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Sat, 06 Feb 2016 00:20:49 UTC +00:00], ["email", "raphael.bradtke@kulasrunolfsdottir.net"], ["firstname", "Nella"], ["lastname", "Renner"], ["password_digest", "$2a$10$in2M4yNzvhcGm1h5RZDwReSQeBSouvb4nXcmoLMa1PBZXiTAepAvi"], ["updated_at", Sat, 06 Feb 2016 00:20:49 UTC +00:00]]
+  [1m[36m (3.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (6.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 06 Feb 2016 00:20:49 UTC +00:00], ["email", "isadore.hayes@hilpert.org"], ["firstname", "Yasmine"], ["lastname", "O'Connell"], ["password_digest", "$2a$10$e3m7U4fX7.xsVfqALgHdM.9oIeLX.BEv.hO09wgFpbMTChZdlVxyy"], ["updated_at", Sat, 06 Feb 2016 00:20:49 UTC +00:00]]
+  [1m[35m (3.5ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (6.0ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", true], ["created_at", Sat, 06 Feb 2016 00:20:49 UTC +00:00], ["email", "connie_schuppe@wisoky.co"], ["firstname", "Alda"], ["lastname", "Carroll"], ["password_digest", "$2a$10$jnGG9vQF5xu9i9SPoSz8EufO3k94ZsJZdBirlS.06Q31ARLoJeIvO"], ["updated_at", Sat, 06 Feb 2016 00:20:49 UTC +00:00]]
+  [1m[36m (3.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (6.1ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", true], ["created_at", Sat, 06 Feb 2016 00:20:49 UTC +00:00], ["email", "yadira_batz@streichveum.com"], ["firstname", "Terrance"], ["lastname", "Murray"], ["password_digest", "$2a$10$M0.sFFn8VgEHRF.bw78ubumoqjeFz7bGtYQ6jdoBYderMMGxqHVLW"], ["updated_at", Sat, 06 Feb 2016 00:20:49 UTC +00:00]]
+  [1m[35m (3.4ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (6.7ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", true], ["created_at", Sat, 06 Feb 2016 00:20:49 UTC +00:00], ["email", "ray@friesen.io"], ["firstname", "Marquise"], ["lastname", "Stokes"], ["password_digest", "$2a$10$toXVKhvkR7BWyUKtdx8VBOFS9nK2FKfs7nUub20sKYuyZ6gUsqCG2"], ["updated_at", Sat, 06 Feb 2016 00:20:49 UTC +00:00]]
+  [1m[36m (4.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.7ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 06 Feb 2016 00:20:49 UTC +00:00], ["email", "erling_lynch@abshire.name"], ["firstname", "Rebeca"], ["lastname", "Wisozk"], ["password_digest", "$2a$10$6hxyN.SbYjgTWjaK/uKSAOLor5xEaaPmgiH8Ahtvz/FYhAfHgonoC"], ["updated_at", Sat, 06 Feb 2016 00:20:49 UTC +00:00]]
+  [1m[35m (3.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (6.1ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", true], ["created_at", Sat, 06 Feb 2016 00:20:50 UTC +00:00], ["email", "myrna@schmitt.net"], ["firstname", "Imani"], ["lastname", "Cormier"], ["password_digest", "$2a$10$yMVPec4PZBoUquqSSm8Wq.xzm4z67fW49udiTPGShxsDtNo8j74pa"], ["updated_at", Sat, 06 Feb 2016 00:20:50 UTC +00:00]]
+  [1m[36m (3.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (5.9ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 06 Feb 2016 00:20:50 UTC +00:00], ["email", "green@prohaskastokes.com"], ["firstname", "Adam"], ["lastname", "Conroy"], ["password_digest", "$2a$10$.z/QazbkMMHPWoqVmtzmY.eWlCpm2THOgPAeY5OKgxkg3wSheyLG."], ["updated_at", Sat, 06 Feb 2016 00:20:50 UTC +00:00]]
+  [1m[35m (4.6ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (7.4ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", true], ["created_at", Sat, 06 Feb 2016 00:20:50 UTC +00:00], ["email", "mabel@schusterarmstrong.net"], ["firstname", "Albert"], ["lastname", "Schinner"], ["password_digest", "$2a$10$GoUUoInqll75bF4wJg9fUuQP9ZKRYSyEryBfBdCvwbKCXwdORsFHO"], ["updated_at", Sat, 06 Feb 2016 00:20:50 UTC +00:00]]
+  [1m[36m (3.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (6.5ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 06 Feb 2016 00:20:50 UTC +00:00], ["email", "raphaelle@purdy.io"], ["firstname", "Viviane"], ["lastname", "Runolfsdottir"], ["password_digest", "$2a$10$fXWjs7sSm5uHg2Pa36hr5.3agudBx4gbdCKMHc2yWKz33/ZukVIiy"], ["updated_at", Sat, 06 Feb 2016 00:20:50 UTC +00:00]]
+  [1m[35m (3.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (6.0ms)[0m  INSERT INTO "users" ("created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Sat, 06 Feb 2016 00:20:50 UTC +00:00], ["email", "natalie_ondricka@cartwright.io"], ["firstname", "Talon"], ["lastname", "Huels"], ["password_digest", "$2a$10$dkXd33zIKrqph2Z1k2tI7e9xjntQjmwyk/ExuvxA0/Mgzx1i21n2G"], ["updated_at", Sat, 06 Feb 2016 00:20:50 UTC +00:00]]
+  [1m[36m (3.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.8ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 06 Feb 2016 00:20:50 UTC +00:00], ["email", "arvid@champlinlangosh.co"], ["firstname", "Caesar"], ["lastname", "Brekke"], ["password_digest", "$2a$10$536Pa.c2JFTkU04rRQRKYep2saUWuEguJhkMrqiktzOEOtrD0S3yO"], ["updated_at", Sat, 06 Feb 2016 00:20:50 UTC +00:00]]
+  [1m[35m (3.4ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (4.8ms)[0m  INSERT INTO "users" ("created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Sat, 06 Feb 2016 00:20:50 UTC +00:00], ["email", "winfield.lockman@murrayschamberger.com"], ["firstname", "Lucio"], ["lastname", "Blick"], ["password_digest", "$2a$10$XlirjblAUQfqUahz0op0lOCqTxHJDNtx2jyQ9qdxH3lmpzac0DLDC"], ["updated_at", Sat, 06 Feb 2016 00:20:50 UTC +00:00]]
+  [1m[36m (3.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (5.3ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 06 Feb 2016 00:20:50 UTC +00:00], ["email", "london@leuschke.org"], ["firstname", "Kelsie"], ["lastname", "Leuschke"], ["password_digest", "$2a$10$MqEK0FDA5YzsRM2uoIUEYOZ4LQb33r69Dh4Vb578c5ZiutIBuU63m"], ["updated_at", Sat, 06 Feb 2016 00:20:50 UTC +00:00]]
+  [1m[35m (3.7ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (5.0ms)[0m  INSERT INTO "users" ("created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Sat, 06 Feb 2016 00:20:50 UTC +00:00], ["email", "kyra_harris@gusikowski.biz"], ["firstname", "Domenic"], ["lastname", "Fahey"], ["password_digest", "$2a$10$TxTNaXMuvMGxZB9Uju3Hpuc9ZwmJ1n8e2rESF.JnCg2F3fotJD7tW"], ["updated_at", Sat, 06 Feb 2016 00:20:50 UTC +00:00]]
+  [1m[36m (3.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (5.1ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["email", "abner_bailey@towne.name"], ["firstname", "Keith"], ["lastname", "Christiansen"], ["password_digest", "$2a$10$DjDUdgc2LVSuEXX94j5zauWUOI95GmytzAxFxN8tRd7peH4Q5aBbO"], ["updated_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00]]
+  [1m[35m (3.3ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (4.6ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["admin", true], ["created_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["email", "leslie_bosco@franecki.com"], ["firstname", "Micheal"], ["lastname", "Hackett"], ["password_digest", "$2a$10$e1YowazB0HuFUCgdC8fPOubosC4WU5z566kdlfEVZfE2XFi5SREaC"], ["updated_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00]]
+  [1m[36m (3.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.8ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["email", "perry.morar@shanahan.biz"], ["firstname", "Trenton"], ["lastname", "Hyatt"], ["password_digest", "$2a$10$TZqKFfHSgE.doFx4RPbfNOqPDvM5c2w4pRr4sZdBXoSmU0MxpkYIW"], ["updated_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00]]
+  [1m[35m (3.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (4.9ms)[0m  INSERT INTO "users" ("created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["email", "freddy@funk.co"], ["firstname", "Gunnar"], ["lastname", "Hyatt"], ["password_digest", "$2a$10$BWrFr4.FfHdWyk6oQ5TGy.E0HaXfB6uRFi8n0z8ECocp86ctFV.nW"], ["updated_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00]]
+  [1m[36m (3.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (2.4ms)[0m  SELECT "users".* FROM "users"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.7ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["description", "Waistcoat taxidermy fashion axe. Pabst keytar typewriter park. Kitsch dreamcatcher synth. Seitan deep v pabst everyday meggings semiotics. Mlkshk blue bottle marfa selfies disrupt dreamcatcher meditation."], ["director", "Lowell Jenkins II"], ["poster_image_url", "http://lorempixel.com/150/150/abstract"], ["release_date", Mon, 29 Dec 2014 00:00:00 UTC +00:00], ["runtime_in_minutes", 142], ["title", "Finding a New Sun"], ["updated_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["user_id", 1]]
+  [1m[36m (3.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (6.2ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["description", "Fixie skateboard kickstarter mlkshk lo-fi chambray. Artisan tumblr tousled beard typewriter swag. Banh mi semiotics pitchfork raw denim readymade venmo. Narwhal godard pork belly cornhole master yr fingerstache. Tote bag godard photo booth polaroid yolo tousled authentic blue bottle."], ["director", "Frank Herzog"], ["poster_image_url", "http://lorempixel.com/150/150/sports"], ["release_date", Sun, 18 Oct 2015 00:00:00 UTC +00:00], ["runtime_in_minutes", 147], ["title", "Keyboard For Hire"], ["updated_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["user_id", 1]]
+  [1m[35m (3.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (6.4ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["description", "+1 asymmetrical brunch cold-pressed aesthetic gastropub heirloom bespoke. Pinterest xoxo bitters vinyl semiotics wes anderson kitsch. Cliche messenger bag cold-pressed. Echo crucifix tattooed normcore plaid trust fund hammock. Yuccie helvetica keytar actually wolf."], ["director", "Mohamed Morissette"], ["poster_image_url", "http://lorempixel.com/150/150/abstract"], ["release_date", Thu, 19 Nov 2015 00:00:00 UTC +00:00], ["runtime_in_minutes", 137], ["title", "Tomato in the Window"], ["updated_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["user_id", 2]]
+  [1m[36m (3.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (5.2ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["description", "Flannel 3 wolf moon vinyl literally. Pop-up viral plaid cred. Yolo messenger bag stumptown."], ["director", "Dr. Grayce Ortiz"], ["poster_image_url", "http://lorempixel.com/150/150/abstract"], ["release_date", Fri, 13 Nov 2015 00:00:00 UTC +00:00], ["runtime_in_minutes", 178], ["title", "The Odd Sister"], ["updated_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["user_id", 2]]
+  [1m[35m (4.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (4.8ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["description", "Dreamcatcher +1 fashion axe. Pop-up master goth sustainable portland bushwick. Vice direct trade neutra."], ["director", "Corrine Abbott IV"], ["poster_image_url", "http://lorempixel.com/150/150/cats"], ["release_date", Sat, 09 Aug 2014 00:00:00 UTC +00:00], ["runtime_in_minutes", 62], ["title", "Next Day Previous Night"], ["updated_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["user_id", 3]]
+  [1m[36m (4.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (5.8ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["description", "Whatever cliche cronut narwhal. Keytar umami pour-over pinterest. 8-bit church-key tumblr pbr&b five dollar toast stumptown lo-fi neutra. Humblebrag pickled hella. Celiac chillwave bespoke chambray slow-carb fanny pack tote bag kitsch."], ["director", "Sabrina Hyatt MD"], ["poster_image_url", "http://lorempixel.com/150/150/sports"], ["release_date", Fri, 17 Apr 2015 00:00:00 UTC +00:00], ["runtime_in_minutes", 156], ["title", "Ready, Set, Die"], ["updated_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["user_id", 3]]
+  [1m[35m (4.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (5.7ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["description", "Artisan retro twee fingerstache gentrify. Raw denim scenester you probably haven't heard of them chia. Flexitarian wolf you probably haven't heard of them. Carry intelligentsia gluten-free fingerstache bespoke. Five dollar toast typewriter 90's tilde blog poutine."], ["director", "Mr. Frederic Strosin"], ["poster_image_url", "http://lorempixel.com/150/150/sports"], ["release_date", Fri, 11 Dec 2015 00:00:00 UTC +00:00], ["runtime_in_minutes", 131], ["title", "Burning Water"], ["updated_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["user_id", 4]]
+  [1m[36m (3.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (6.6ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["description", "Narwhal swag blue bottle. Helvetica church-key paleo letterpress tumblr irony. Williamsburg helvetica mustache polaroid franzen +1 flannel banjo. Selfies etsy truffaut butcher fap fixie."], ["director", "Donald Lynch"], ["poster_image_url", "http://lorempixel.com/150/150/sports"], ["release_date", Mon, 06 Oct 2014 00:00:00 UTC +00:00], ["runtime_in_minutes", 62], ["title", "Walking and Running"], ["updated_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["user_id", 4]]
+  [1m[35m (3.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (5.5ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["description", "Yuccie food truck cold-pressed brunch 8-bit waistcoat wayfarers. Pbr&b stumptown freegan ugh pitchfork migas beard. Single-origin coffee shoreditch xoxo venmo selvage asymmetrical chartreuse fingerstache. 3 wolf moon chillwave migas. Green juice taxidermy authentic fanny pack."], ["director", "Clare Wisoky"], ["poster_image_url", "http://lorempixel.com/150/150/cats"], ["release_date", Wed, 23 Sep 2015 00:00:00 UTC +00:00], ["runtime_in_minutes", 89], ["title", "Ready, Set, Die"], ["updated_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["user_id", 5]]
+  [1m[36m (4.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (5.3ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["description", "+1 williamsburg fingerstache loko cronut sustainable fixie. Retro polaroid twee meh vice microdosing sartorial lomo. Williamsburg biodiesel drinking blue bottle humblebrag. Organic master brooklyn."], ["director", "Kaleb Braun"], ["poster_image_url", "http://lorempixel.com/150/150/sports"], ["release_date", Fri, 21 Nov 2014 00:00:00 UTC +00:00], ["runtime_in_minutes", 159], ["title", "Covered and Warm"], ["updated_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["user_id", 5]]
+  [1m[35m (4.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (5.9ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["description", "You probably haven't heard of them keffiyeh tumblr paleo squid goth distillery. Church-key squid cray salvia asymmetrical drinking. Vinyl deep v selfies gastropub flannel next level vinegar. Microdosing yuccie meh leggings put a bird on it fap flexitarian heirloom. Whatever salvia selvage tacos wolf bushwick."], ["director", "Mrs. Milo Moen"], ["poster_image_url", "http://lorempixel.com/150/150/cats"], ["release_date", Mon, 22 Dec 2014 00:00:00 UTC +00:00], ["runtime_in_minutes", 84], ["title", "Tomato in the Window"], ["updated_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["user_id", 6]]
+  [1m[36m (4.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (6.2ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["description", "Ennui pug cardigan umami squid irony heirloom. Meditation kogi church-key you probably haven't heard of them sustainable. Celiac asymmetrical locavore readymade fingerstache banh mi."], ["director", "Finn Corwin"], ["poster_image_url", "http://lorempixel.com/150/150/cats"], ["release_date", Tue, 02 Jun 2015 00:00:00 UTC +00:00], ["runtime_in_minutes", 64], ["title", "Candy For Two"], ["updated_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["user_id", 6]]
+  [1m[35m (3.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (6.2ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["description", "Bicycle rights deep v chartreuse aesthetic bushwick tacos roof. Bespoke microdosing keffiyeh. Master flannel viral art party pinterest."], ["director", "Gilda Howell"], ["poster_image_url", "http://lorempixel.com/150/150/cats"], ["release_date", Thu, 23 Jul 2015 00:00:00 UTC +00:00], ["runtime_in_minutes", 76], ["title", "Stop Asking, Just Do"], ["updated_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["user_id", 7]]
+  [1m[36m (4.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (5.7ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["description", "Post-ironic tattooed gluten-free. 3 wolf moon gentrify mixtape plaid selfies. Quinoa food truck vinegar before they sold out wolf aesthetic 3 wolf moon."], ["director", "Dr. Cecelia Davis"], ["poster_image_url", "http://lorempixel.com/150/150/sports"], ["release_date", Mon, 21 Sep 2015 00:00:00 UTC +00:00], ["runtime_in_minutes", 152], ["title", "Stop Asking, Just Do"], ["updated_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["user_id", 7]]
+  [1m[35m (4.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (5.6ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["description", "Fashion axe food truck chartreuse microdosing. Listicle try-hard pitchfork schlitz godard. Leggings umami raw denim."], ["director", "Magdalen Gutmann"], ["poster_image_url", "http://lorempixel.com/150/150/abstract"], ["release_date", Sat, 07 Nov 2015 00:00:00 UTC +00:00], ["runtime_in_minutes", 75], ["title", "Future Discretions"], ["updated_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["user_id", 8]]
+  [1m[36m (3.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (5.1ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["description", "Tote bag whatever crucifix lumbersexual ennui freegan. Fixie street vinegar literally portland pork belly intelligentsia chillwave. Ethical gentrify tote bag fanny pack."], ["director", "Ellis Ziemann"], ["poster_image_url", "http://lorempixel.com/150/150/sports"], ["release_date", Mon, 21 Sep 2015 00:00:00 UTC +00:00], ["runtime_in_minutes", 161], ["title", "Free Parking"], ["updated_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["user_id", 8]]
+  [1m[35m (4.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (5.7ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["description", "Taxidermy viral semiotics dreamcatcher drinking typewriter synth umami. Roof ugh 3 wolf moon. Poutine helvetica quinoa neutra freegan. 8-bit hoodie skateboard cred thundercats."], ["director", "Randall Feil"], ["poster_image_url", "http://lorempixel.com/150/150/cats"], ["release_date", Fri, 10 Oct 2014 00:00:00 UTC +00:00], ["runtime_in_minutes", 148], ["title", "Free Parking"], ["updated_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["user_id", 9]]
+  [1m[36m (3.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (7.0ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["description", "Vegan fanny pack food truck. Blue bottle wayfarers freegan. Vegan umami cornhole helvetica cliche freegan photo booth pickled. Lumbersexual raw denim locavore thundercats ennui semiotics yr everyday. Taxidermy pabst bicycle rights."], ["director", "Alivia Dibbert"], ["poster_image_url", "http://lorempixel.com/150/150/cats"], ["release_date", Sat, 28 Mar 2015 00:00:00 UTC +00:00], ["runtime_in_minutes", 95], ["title", "What Lives on Pluto"], ["updated_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["user_id", 9]]
+  [1m[35m (3.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (5.5ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["description", "Mlkshk organic 8-bit etsy. Pbr&b semiotics forage tumblr food truck bitters. Butcher kale chips cleanse chia asymmetrical roof. Yr chambray austin letterpress swag."], ["director", "Murray Stamm Jr."], ["poster_image_url", "http://lorempixel.com/150/150/abstract"], ["release_date", Sat, 03 Jan 2015 00:00:00 UTC +00:00], ["runtime_in_minutes", 179], ["title", "Finding a New Sun"], ["updated_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["user_id", 10]]
+  [1m[36m (4.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (5.7ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["description", "Health hammock vinyl next level stumptown kickstarter. Brooklyn fap skateboard wolf butcher deep v. Keytar swag xoxo whatever lomo waistcoat butcher godard. Deep v shoreditch leggings knausgaard everyday messenger bag selfies."], ["director", "Gudrun Collins"], ["poster_image_url", "http://lorempixel.com/150/150/abstract"], ["release_date", Wed, 01 Apr 2015 00:00:00 UTC +00:00], ["runtime_in_minutes", 82], ["title", "Walking and Running"], ["updated_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["user_id", 10]]
+  [1m[35m (3.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (5.6ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["description", "Williamsburg trust fund normcore try-hard direct trade stumptown. Whatever fixie cliche neutra flexitarian vinyl sriracha street. Asymmetrical echo cliche meditation vhs tote bag. Kale chips kitsch twee 3 wolf moon."], ["director", "Telly Brown"], ["poster_image_url", "http://lorempixel.com/150/150/sports"], ["release_date", Tue, 17 Feb 2015 00:00:00 UTC +00:00], ["runtime_in_minutes", 165], ["title", "Next Day Previous Night"], ["updated_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["user_id", 11]]
+  [1m[36m (4.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (5.8ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["description", "Messenger bag blue bottle bitters vinegar pinterest kogi. Quinoa disrupt plaid drinking yr cornhole. Thundercats drinking actually health photo booth vegan asymmetrical. Cliche kombucha cardigan. Taxidermy paleo bicycle rights lomo."], ["director", "Garret Leffler"], ["poster_image_url", "http://lorempixel.com/150/150/sports"], ["release_date", Sun, 23 Aug 2015 00:00:00 UTC +00:00], ["runtime_in_minutes", 158], ["title", "Walking and Running"], ["updated_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["user_id", 11]]
+  [1m[35m (3.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (5.3ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["description", "Before they sold out chillwave migas put a bird on it. Neutra yolo kitsch cred wes anderson gentrify sriracha. Crucifix leggings fixie humblebrag."], ["director", "Ken Schmidt"], ["poster_image_url", "http://lorempixel.com/150/150/sports"], ["release_date", Fri, 04 Jul 2014 00:00:00 UTC +00:00], ["runtime_in_minutes", 103], ["title", "No Lonely Stars"], ["updated_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["user_id", 12]]
+  [1m[36m (3.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (5.4ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["description", "Fap tousled messenger bag twee vinegar skateboard. Kickstarter direct trade hammock goth lumbersexual. Whatever jean shorts tattooed tousled tumblr. Meditation direct trade typewriter cronut actually shoreditch."], ["director", "Abraham Fisher III"], ["poster_image_url", "http://lorempixel.com/150/150/abstract"], ["release_date", Sat, 08 Nov 2014 00:00:00 UTC +00:00], ["runtime_in_minutes", 65], ["title", "Walking and Running"], ["updated_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["user_id", 12]]
+  [1m[35m (4.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (4.8ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["description", "Readymade yuccie farm-to-table. Retro tote bag cray carry put a bird on it lumbersexual. Knausgaard beard freegan. Portland gastropub locavore selvage. Pabst distillery pop-up kinfolk 3 wolf moon kombucha."], ["director", "Carli Hahn"], ["poster_image_url", "http://lorempixel.com/150/150/sports"], ["release_date", Thu, 18 Jun 2015 00:00:00 UTC +00:00], ["runtime_in_minutes", 113], ["title", "Walking and Running"], ["updated_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["user_id", 13]]
+  [1m[36m (5.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (6.1ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["description", "Drinking wes anderson 3 wolf moon bespoke dreamcatcher narwhal tilde. Shabby chic migas plaid. Neutra offal kogi sustainable poutine tilde."], ["director", "Betsy Nienow"], ["poster_image_url", "http://lorempixel.com/150/150/sports"], ["release_date", Sun, 24 Aug 2014 00:00:00 UTC +00:00], ["runtime_in_minutes", 145], ["title", "Ready, Set, Die"], ["updated_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["user_id", 13]]
+  [1m[35m (4.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (5.1ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["description", "Mumblecore shoreditch paleo loko schlitz. Street gastropub kitsch. Vice ugh drinking. Diy venmo semiotics lomo mumblecore post-ironic heirloom fixie."], ["director", "Sidney Jast"], ["poster_image_url", "http://lorempixel.com/150/150/sports"], ["release_date", Fri, 03 Oct 2014 00:00:00 UTC +00:00], ["runtime_in_minutes", 78], ["title", "The Odd Sister"], ["updated_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["user_id", 14]]
+  [1m[36m (4.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (5.9ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["description", "Flexitarian quinoa cleanse pabst tofu migas polaroid. Shabby chic slow-carb mixtape pabst +1. Pop-up banh mi cronut. Thundercats fashion axe pbr&b artisan yr post-ironic humblebrag dreamcatcher. Literally selvage bushwick."], ["director", "Junius Volkman PhD"], ["poster_image_url", "http://lorempixel.com/150/150/abstract"], ["release_date", Sat, 07 Mar 2015 00:00:00 UTC +00:00], ["runtime_in_minutes", 97], ["title", "What Lives on Pluto"], ["updated_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["user_id", 14]]
+  [1m[35m (3.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (5.6ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["description", "Literally polaroid tumblr pour-over readymade microdosing franzen 90's. Direct trade yuccie tumblr retro pour-over green juice migas. Gentrify tofu yuccie messenger bag. Leggings loko gluten-free xoxo."], ["director", "Ms. Matilda Paucek"], ["poster_image_url", "http://lorempixel.com/150/150/abstract"], ["release_date", Tue, 24 Jun 2014 00:00:00 UTC +00:00], ["runtime_in_minutes", 57], ["title", "The Frog Catchers Field Manual"], ["updated_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["user_id", 15]]
+  [1m[36m (3.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (5.9ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["description", "Knausgaard wes anderson sriracha. Mlkshk bicycle rights letterpress whatever asymmetrical vinyl cronut. Heirloom tacos polaroid chicharrones brunch narwhal pinterest ethical."], ["director", "Ashtyn Smith PhD"], ["poster_image_url", "http://lorempixel.com/150/150/sports"], ["release_date", Thu, 07 May 2015 00:00:00 UTC +00:00], ["runtime_in_minutes", 133], ["title", "Free Parking"], ["updated_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["user_id", 15]]
+  [1m[35m (4.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (6.7ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["description", "Aesthetic vinegar hella asymmetrical williamsburg chartreuse tattooed. Meh literally yr vhs meggings heirloom. Church-key small batch forage bespoke salvia pug deep v brooklyn."], ["director", "Amir Ullrich Jr."], ["poster_image_url", "http://lorempixel.com/150/150/cats"], ["release_date", Thu, 29 Oct 2015 00:00:00 UTC +00:00], ["runtime_in_minutes", 49], ["title", "Tomato in the Window"], ["updated_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["user_id", 16]]
+  [1m[36m (3.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (5.2ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["description", "Squid mixtape cray mustache irony. Keytar five dollar toast flexitarian kombucha tumblr taxidermy yolo. Hammock pitchfork vegan direct trade. Offal bicycle rights letterpress. Pork belly celiac chambray kinfolk."], ["director", "Adah Romaguera"], ["poster_image_url", "http://lorempixel.com/150/150/cats"], ["release_date", Tue, 17 Jun 2014 00:00:00 UTC +00:00], ["runtime_in_minutes", 85], ["title", "Tomato in the Window"], ["updated_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["user_id", 16]]
+  [1m[35m (4.6ms)[0m  commit transaction
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (5.4ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["description", "Photo booth wes anderson lo-fi. Salvia meditation gluten-free cliche banjo. Forage messenger bag pug pitchfork. Cornhole beard mlkshk whatever marfa goth helvetica. Craft beer bicycle rights pinterest williamsburg truffaut artisan migas yolo."], ["director", "Erich Carter"], ["poster_image_url", "http://lorempixel.com/150/150/sports"], ["release_date", Thu, 18 Sep 2014 00:00:00 UTC +00:00], ["runtime_in_minutes", 60], ["title", "Candy For Two"], ["updated_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["user_id", 17]]
+  [1m[36m (3.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (5.3ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["description", "Ennui occupy typewriter venmo. Sustainable bicycle rights messenger bag plaid brunch. Dreamcatcher knausgaard direct trade blue bottle pitchfork 8-bit authentic ugh."], ["director", "Katlynn Fahey DDS"], ["poster_image_url", "http://lorempixel.com/150/150/abstract"], ["release_date", Fri, 07 Aug 2015 00:00:00 UTC +00:00], ["runtime_in_minutes", 98], ["title", "The Odd Sister"], ["updated_at", Sat, 06 Feb 2016 00:20:51 UTC +00:00], ["user_id", 17]]
+  [1m[35m (3.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (6.0ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["description", "Mlkshk humblebrag butcher neutra street flexitarian try-hard tote bag. Stumptown forage deep v blog williamsburg diy try-hard. Butcher celiac taxidermy everyday hashtag cold-pressed listicle williamsburg."], ["director", "Idella Mann"], ["poster_image_url", "http://lorempixel.com/150/150/abstract"], ["release_date", Tue, 03 Feb 2015 00:00:00 UTC +00:00], ["runtime_in_minutes", 106], ["title", "Fishing With Chips"], ["updated_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["user_id", 18]]
+  [1m[36m (4.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (5.5ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["description", "Jean shorts 90's cronut. Blog neutra poutine iphone kale chips sartorial semiotics thundercats. Tousled schlitz normcore roof. Try-hard you probably haven't heard of them plaid listicle skateboard viral. Ennui diy master."], ["director", "Wilton Wehner"], ["poster_image_url", "http://lorempixel.com/150/150/abstract"], ["release_date", Mon, 25 Aug 2014 00:00:00 UTC +00:00], ["runtime_in_minutes", 58], ["title", "Falling Flags"], ["updated_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["user_id", 18]]
+  [1m[35m (4.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (6.1ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["description", "Iphone thundercats cardigan park asymmetrical irony flannel jean shorts. Retro diy vhs you probably haven't heard of them. Skateboard pickled pinterest kogi bitters."], ["director", "Lilian Bins"], ["poster_image_url", "http://lorempixel.com/150/150/cats"], ["release_date", Mon, 21 Sep 2015 00:00:00 UTC +00:00], ["runtime_in_minutes", 154], ["title", "What Lives on Pluto"], ["updated_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["user_id", 19]]
+  [1m[36m (3.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (5.4ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["description", "Farm-to-table goth food truck tote bag taxidermy hammock hashtag. Listicle hella craft beer plaid seitan. Normcore tumblr butcher tofu bespoke authentic. Neutra chia chillwave. Locavore small batch yuccie chia swag mumblecore."], ["director", "Polly Tremblay"], ["poster_image_url", "http://lorempixel.com/150/150/cats"], ["release_date", Mon, 25 Jan 2016 00:00:00 UTC +00:00], ["runtime_in_minutes", 49], ["title", "Fishing With Chips"], ["updated_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["user_id", 19]]
+  [1m[35m (4.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (7.3ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["description", "Diy hashtag kitsch post-ironic cornhole taxidermy tattooed. Squid pug distillery. Gentrify actually vinegar fingerstache godard kinfolk ennui artisan. Brunch thundercats scenester fixie occupy truffaut carry."], ["director", "Claudia Greenfelder"], ["poster_image_url", "http://lorempixel.com/150/150/abstract"], ["release_date", Tue, 16 Jun 2015 00:00:00 UTC +00:00], ["runtime_in_minutes", 96], ["title", "Ready, Set, Die"], ["updated_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["user_id", 20]]
+  [1m[36m (4.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (5.0ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["description", "Artisan selvage listicle occupy. Fingerstache semiotics goth. Roof flannel meggings banjo. Ramps sartorial stumptown beard pabst vice."], ["director", "Miss Cathrine Robel"], ["poster_image_url", "http://lorempixel.com/150/150/sports"], ["release_date", Sat, 11 Jul 2015 00:00:00 UTC +00:00], ["runtime_in_minutes", 50], ["title", "What Lives on Pluto"], ["updated_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["user_id", 20]]
+  [1m[35m (4.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (6.3ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["description", "Keytar stumptown keffiyeh echo. Lumbersexual farm-to-table typewriter goth. Thundercats venmo kickstarter synth craft beer austin mustache."], ["director", "Mr. Kayla Mayert"], ["poster_image_url", "http://lorempixel.com/150/150/abstract"], ["release_date", Fri, 13 Mar 2015 00:00:00 UTC +00:00], ["runtime_in_minutes", 165], ["title", "A Dozen Heros"], ["updated_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["user_id", 21]]
+  [1m[36m (3.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (5.5ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["description", "Chambray vice bitters typewriter. Kale chips vhs paleo dreamcatcher organic. Pabst 90's polaroid. Brunch beard twee shabby chic. Fingerstache +1 truffaut flexitarian drinking meditation mustache."], ["director", "Murphy Gulgowski MD"], ["poster_image_url", "http://lorempixel.com/150/150/sports"], ["release_date", Wed, 05 Aug 2015 00:00:00 UTC +00:00], ["runtime_in_minutes", 137], ["title", "A Dozen Heros"], ["updated_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["user_id", 21]]
+  [1m[35m (3.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (5.4ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["description", "+1 poutine chia xoxo. Master butcher messenger bag thundercats aesthetic typewriter green juice godard. Bicycle rights migas humblebrag post-ironic. Marfa drinking iphone umami yuccie."], ["director", "Paolo Hayes"], ["poster_image_url", "http://lorempixel.com/150/150/sports"], ["release_date", Sat, 11 Apr 2015 00:00:00 UTC +00:00], ["runtime_in_minutes", 68], ["title", "Stop Asking, Just Do"], ["updated_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["user_id", 22]]
+  [1m[36m (4.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (5.7ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["description", "Five dollar toast brooklyn try-hard art party hammock. Tofu messenger bag mlkshk etsy artisan normcore hella. Quinoa gluten-free cleanse wayfarers venmo sustainable vegan 3 wolf moon."], ["director", "Shayna Kilback"], ["poster_image_url", "http://lorempixel.com/150/150/sports"], ["release_date", Sun, 25 Oct 2015 00:00:00 UTC +00:00], ["runtime_in_minutes", 77], ["title", "Slicker Than Rain"], ["updated_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["user_id", 22]]
+  [1m[35m (3.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (5.2ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["description", "Fashion axe kale chips franzen selvage twee you probably haven't heard of them. Kitsch chillwave park listicle irony gastropub pitchfork. Vegan bushwick offal hoodie everyday. +1 forage slow-carb cardigan master goth seitan. Raw denim pickled marfa tattooed."], ["director", "Mackenzie Reichert"], ["poster_image_url", "http://lorempixel.com/150/150/cats"], ["release_date", Sat, 09 Jan 2016 00:00:00 UTC +00:00], ["runtime_in_minutes", 98], ["title", "Covered and Warm"], ["updated_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["user_id", 23]]
+  [1m[36m (4.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (7.3ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["description", "Listicle vinyl chia typewriter lomo master hashtag. Street neutra park you probably haven't heard of them. Goth beard locavore marfa quinoa shoreditch yuccie. Gluten-free pour-over raw denim blog hashtag hella. Kickstarter knausgaard vegan echo artisan squid."], ["director", "Lonny Kuhlman"], ["poster_image_url", "http://lorempixel.com/150/150/sports"], ["release_date", Tue, 01 Jul 2014 00:00:00 UTC +00:00], ["runtime_in_minutes", 95], ["title", "Walking and Running"], ["updated_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["user_id", 23]]
+  [1m[35m (3.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (5.4ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["description", "Kogi park sustainable swag disrupt cardigan. Small batch 8-bit kale chips polaroid godard. Offal intelligentsia mustache. Roof yolo pug photo booth biodiesel."], ["director", "Brent Thompson"], ["poster_image_url", "http://lorempixel.com/150/150/abstract"], ["release_date", Fri, 01 May 2015 00:00:00 UTC +00:00], ["runtime_in_minutes", 96], ["title", "Tomato in the Window"], ["updated_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["user_id", 24]]
+  [1m[36m (4.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (5.4ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["description", "Plaid tote bag fingerstache retro listicle street. Typewriter five dollar toast drinking. Meditation keffiyeh lumbersexual synth craft beer chicharrones williamsburg health."], ["director", "Mrs. Bryana Murazik"], ["poster_image_url", "http://lorempixel.com/150/150/abstract"], ["release_date", Fri, 25 Sep 2015 00:00:00 UTC +00:00], ["runtime_in_minutes", 126], ["title", "Ready, Set, Die"], ["updated_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["user_id", 24]]
+  [1m[35m (5.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (5.2ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["description", "Blue bottle cleanse iphone franzen. Tousled keytar blog iphone. Intelligentsia cornhole tote bag banh mi freegan. Retro jean shorts banjo fanny pack tacos biodiesel loko hammock."], ["director", "Dr. Francisca Orn"], ["poster_image_url", "http://lorempixel.com/150/150/sports"], ["release_date", Sat, 31 Jan 2015 00:00:00 UTC +00:00], ["runtime_in_minutes", 119], ["title", "The Odd Sister"], ["updated_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["user_id", 25]]
+  [1m[36m (4.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (4.8ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["description", "Kombucha fashion axe viral chambray blog. Literally freegan 8-bit stumptown before they sold out. Portland butcher fanny pack pbr&b tousled."], ["director", "Ruby Feest II"], ["poster_image_url", "http://lorempixel.com/150/150/sports"], ["release_date", Mon, 16 Jun 2014 00:00:00 UTC +00:00], ["runtime_in_minutes", 176], ["title", "Tomato in the Window"], ["updated_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["user_id", 25]]
+  [1m[35m (49.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (8.7ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["description", "Authentic blue bottle brunch ugh vegan ramps neutra listicle. Hella master gastropub cliche lumbersexual. Chia neutra williamsburg."], ["director", "Arno Howell"], ["poster_image_url", "http://lorempixel.com/150/150/sports"], ["release_date", Sat, 29 Aug 2015 00:00:00 UTC +00:00], ["runtime_in_minutes", 171], ["title", "Tomato in the Window"], ["updated_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["user_id", 26]]
+  [1m[36m (4.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (5.7ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["description", "Yuccie readymade deep v. Aesthetic chicharrones wes anderson xoxo pabst. Wolf sartorial shabby chic +1 bushwick master keffiyeh."], ["director", "Carissa Stracke"], ["poster_image_url", "http://lorempixel.com/150/150/abstract"], ["release_date", Thu, 05 Feb 2015 00:00:00 UTC +00:00], ["runtime_in_minutes", 117], ["title", "Falling Flags"], ["updated_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["user_id", 26]]
+  [1m[35m (4.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (5.8ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["description", "Marfa polaroid dreamcatcher schlitz iphone health. Post-ironic listicle typewriter mixtape vinegar yuccie. Tofu chillwave crucifix helvetica before they sold out freegan neutra authentic."], ["director", "Eugenia Emard"], ["poster_image_url", "http://lorempixel.com/150/150/abstract"], ["release_date", Fri, 30 Jan 2015 00:00:00 UTC +00:00], ["runtime_in_minutes", 142], ["title", "A Year of Walking"], ["updated_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["user_id", 27]]
+  [1m[36m (3.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (12.7ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["description", "Yr cronut tofu literally. Blue bottle pitchfork bushwick tote bag polaroid fixie salvia. Godard aesthetic church-key cardigan dreamcatcher. Iphone ugh tumblr seitan sartorial. Microdosing ugh diy."], ["director", "Elwin Wehner"], ["poster_image_url", "http://lorempixel.com/150/150/abstract"], ["release_date", Mon, 04 Aug 2014 00:00:00 UTC +00:00], ["runtime_in_minutes", 79], ["title", "The Frog Catchers Field Manual"], ["updated_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["user_id", 27]]
+  [1m[35m (3.7ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (6.3ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["description", "Retro gentrify authentic poutine swag neutra. Street yr tilde cardigan sartorial williamsburg farm-to-table forage. Blog drinking hammock franzen selvage vinyl. Migas knausgaard chartreuse drinking banh mi ennui. Godard next level synth biodiesel."], ["director", "Mr. Gust Hackett"], ["poster_image_url", "http://lorempixel.com/150/150/abstract"], ["release_date", Wed, 20 Aug 2014 00:00:00 UTC +00:00], ["runtime_in_minutes", 75], ["title", "Free Parking"], ["updated_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["user_id", 28]]
+  [1m[36m (4.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (5.8ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["description", "Hoodie keytar chia kale chips sriracha artisan vinegar. Tousled readymade pug trust fund celiac etsy shoreditch tote bag. Small batch mumblecore 90's."], ["director", "Julia Lesch I"], ["poster_image_url", "http://lorempixel.com/150/150/sports"], ["release_date", Thu, 18 Jun 2015 00:00:00 UTC +00:00], ["runtime_in_minutes", 81], ["title", "No Lonely Stars"], ["updated_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["user_id", 28]]
+  [1m[35m (3.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (5.7ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["description", "Pop-up squid mumblecore echo. Distillery fanny pack tacos trust fund cray street vice. Forage put a bird on it photo booth keffiyeh tote bag chartreuse."], ["director", "Jaylen Muller"], ["poster_image_url", "http://lorempixel.com/150/150/abstract"], ["release_date", Thu, 07 Aug 2014 00:00:00 UTC +00:00], ["runtime_in_minutes", 72], ["title", "No Lonely Stars"], ["updated_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["user_id", 29]]
+  [1m[36m (3.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (5.9ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["description", "Mumblecore offal vinegar. Listicle green juice intelligentsia bespoke shabby chic tacos kombucha pour-over. Drinking xoxo hammock kombucha. Vegan tote bag shoreditch twee literally pug."], ["director", "Theron Bernier"], ["poster_image_url", "http://lorempixel.com/150/150/abstract"], ["release_date", Fri, 24 Apr 2015 00:00:00 UTC +00:00], ["runtime_in_minutes", 84], ["title", "The Zookeeper and Her Tiger"], ["updated_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["user_id", 29]]
+  [1m[35m (3.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (5.6ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["description", "Umami seitan poutine. Vinyl cleanse hashtag. Echo blue bottle vinyl selvage. Food truck organic gastropub."], ["director", "Mac Ebert"], ["poster_image_url", "http://lorempixel.com/150/150/abstract"], ["release_date", Sun, 15 Mar 2015 00:00:00 UTC +00:00], ["runtime_in_minutes", 77], ["title", "Slicker Than Rain"], ["updated_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["user_id", 30]]
+  [1m[36m (3.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (5.3ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["description", "Tacos direct trade echo migas selvage bushwick. Migas kale chips diy. Craft beer sriracha post-ironic park fingerstache portland franzen."], ["director", "Kirk Jacobs"], ["poster_image_url", "http://lorempixel.com/150/150/sports"], ["release_date", Fri, 14 Aug 2015 00:00:00 UTC +00:00], ["runtime_in_minutes", 147], ["title", "No Lonely Stars"], ["updated_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["user_id", 30]]
+  [1m[35m (3.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (6.0ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["description", "Narwhal poutine ramps chillwave sustainable lomo master neutra. Typewriter shabby chic fashion axe locavore bushwick art party. Shabby chic semiotics lomo wolf migas kale chips flannel artisan. Try-hard meggings poutine keffiyeh brooklyn."], ["director", "Leonora Ullrich"], ["poster_image_url", "http://lorempixel.com/150/150/cats"], ["release_date", Sun, 30 Nov 2014 00:00:00 UTC +00:00], ["runtime_in_minutes", 171], ["title", "Covered and Warm"], ["updated_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["user_id", 31]]
+  [1m[36m (3.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (5.6ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["description", "Mumblecore authentic lumbersexual cleanse shoreditch. Asymmetrical goth pabst lomo. Cronut bicycle rights gentrify typewriter. Brooklyn forage keytar trust fund ethical slow-carb art party austin."], ["director", "Rosalyn Price"], ["poster_image_url", "http://lorempixel.com/150/150/abstract"], ["release_date", Mon, 02 Feb 2015 00:00:00 UTC +00:00], ["runtime_in_minutes", 106], ["title", "A Year of Walking"], ["updated_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["user_id", 31]]
+  [1m[35m (3.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (5.5ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["description", "Normcore biodiesel schlitz kombucha chicharrones lomo chia church-key. Ethical trust fund migas vice post-ironic. Sartorial kale chips offal craft beer flexitarian godard mlkshk artisan. Xoxo pour-over yuccie food truck mustache. Lumbersexual vinegar helvetica listicle viral freegan pour-over tousled."], ["director", "Walton Brakus"], ["poster_image_url", "http://lorempixel.com/150/150/sports"], ["release_date", Sun, 09 Nov 2014 00:00:00 UTC +00:00], ["runtime_in_minutes", 105], ["title", "Fishing With Chips"], ["updated_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["user_id", 32]]
+  [1m[36m (3.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (5.8ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["description", "Distillery chambray austin selvage. Occupy try-hard polaroid etsy. Readymade microdosing squid dreamcatcher lumbersexual."], ["director", "Mrs. Robert McKenzie"], ["poster_image_url", "http://lorempixel.com/150/150/sports"], ["release_date", Sun, 18 Jan 2015 00:00:00 UTC +00:00], ["runtime_in_minutes", 47], ["title", "The Zookeeper and Her Tiger"], ["updated_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["user_id", 32]]
+  [1m[35m (3.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (5.5ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["description", "Pug meditation godard before they sold out tacos 90's quinoa vhs. Semiotics venmo kale chips ramps narwhal swag meditation church-key. Ennui semiotics portland. Kale chips master cleanse. Vinyl leggings austin narwhal next level post-ironic crucifix."], ["director", "Pearl Stracke III"], ["poster_image_url", "http://lorempixel.com/150/150/abstract"], ["release_date", Wed, 12 Nov 2014 00:00:00 UTC +00:00], ["runtime_in_minutes", 138], ["title", "What Lives on Pluto"], ["updated_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["user_id", 33]]
+  [1m[36m (3.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36mSQL (6.1ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["description", "Viral tote bag goth selvage. Skateboard sriracha cray ennui cornhole blog. Whatever everyday cray 3 wolf moon you probably haven't heard of them. Helvetica leggings health actually butcher."], ["director", "Ashton Wunsch"], ["poster_image_url", "http://lorempixel.com/150/150/abstract"], ["release_date", Sat, 23 Jan 2016 00:00:00 UTC +00:00], ["runtime_in_minutes", 119], ["title", "Falling Flags"], ["updated_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["user_id", 33]]
+  [1m[35m (3.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (5.6ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["description", "Iphone narwhal fingerstache. Etsy wes anderson forage pour-over. Hella occupy meditation selvage mustache brunch bushwick drinking. Crucifix poutine ramps celiac sriracha microdosing freegan typewriter. Park brooklyn asymmetrical tote bag migas."], ["director", "Mitchel Kozey"], ["poster_image_url", "http://lorempixel.com/150/150/abstract"], ["release_date", Mon, 13 Oct 2014 00:00:00 UTC +00:00], ["runtime_in_minutes", 144], ["title", "Slicker Than Rain"], ["updated_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["user_id", 34]]
+  [1m[36m (3.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (5.6ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["description", "Cold-pressed tilde mlkshk. Tofu seitan lumbersexual pitchfork. Scenester artisan godard."], ["director", "Miss Esta Oberbrunner"], ["poster_image_url", "http://lorempixel.com/150/150/cats"], ["release_date", Thu, 03 Dec 2015 00:00:00 UTC +00:00], ["runtime_in_minutes", 118], ["title", "What Lives on Pluto"], ["updated_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["user_id", 34]]
+  [1m[35m (3.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (6.0ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["description", "Artisan typewriter ethical hashtag cold-pressed. Pinterest pickled wes anderson. Vegan letterpress literally cleanse cardigan chillwave kombucha sustainable. Wolf vegan kinfolk migas xoxo typewriter."], ["director", "Linnea Brekke I"], ["poster_image_url", "http://lorempixel.com/150/150/cats"], ["release_date", Tue, 12 May 2015 00:00:00 UTC +00:00], ["runtime_in_minutes", 179], ["title", "Keyboard For Hire"], ["updated_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["user_id", 35]]
+  [1m[36m (3.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (5.8ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["description", "Lomo cold-pressed +1 knausgaard butcher next level. Organic cleanse wes anderson. Mixtape polaroid 3 wolf moon migas pour-over whatever gluten-free keytar. Helvetica cold-pressed waistcoat crucifix sartorial beard. Master kale chips pug fingerstache art party."], ["director", "Vernie Yundt V"], ["poster_image_url", "http://lorempixel.com/150/150/abstract"], ["release_date", Fri, 15 Aug 2014 00:00:00 UTC +00:00], ["runtime_in_minutes", 162], ["title", "Covered and Warm"], ["updated_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["user_id", 35]]
+  [1m[35m (3.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (6.0ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["description", "Schlitz umami kickstarter chartreuse distillery brunch beard. Seitan migas jean shorts shabby chic pbr&b. Intelligentsia neutra polaroid green juice five dollar toast messenger bag stumptown. Disrupt heirloom tousled leggings celiac godard mlkshk."], ["director", "Roger Gerhold"], ["poster_image_url", "http://lorempixel.com/150/150/abstract"], ["release_date", Sun, 18 Jan 2015 00:00:00 UTC +00:00], ["runtime_in_minutes", 157], ["title", "Stop Asking, Just Do"], ["updated_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["user_id", 36]]
+  [1m[36m (3.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (5.8ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["description", "Fixie carry kale chips sustainable irony everyday. Sartorial squid cray chicharrones 8-bit literally. Gluten-free skateboard selfies freegan austin pop-up artisan."], ["director", "Penelope Russel"], ["poster_image_url", "http://lorempixel.com/150/150/abstract"], ["release_date", Thu, 25 Dec 2014 00:00:00 UTC +00:00], ["runtime_in_minutes", 59], ["title", "Covered and Warm"], ["updated_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["user_id", 36]]
+  [1m[35m (3.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (5.7ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["description", "Ramps everyday aesthetic normcore vinyl xoxo. Keytar master tote bag vice bicycle rights. Mlkshk keytar umami intelligentsia banjo kogi. Five dollar toast flexitarian vinyl. Ugh normcore stumptown."], ["director", "Amaya Dooley"], ["poster_image_url", "http://lorempixel.com/150/150/abstract"], ["release_date", Sat, 03 Oct 2015 00:00:00 UTC +00:00], ["runtime_in_minutes", 61], ["title", "Slicker Than Rain"], ["updated_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["user_id", 37]]
+  [1m[36m (3.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (7.0ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["description", "Tilde kickstarter biodiesel carry semiotics everyday chia. Xoxo mustache shoreditch. Lomo next level butcher. Organic you probably haven't heard of them tofu godard cred mixtape. 3 wolf moon pickled chia bicycle rights pabst aesthetic twee."], ["director", "Oswaldo Funk"], ["poster_image_url", "http://lorempixel.com/150/150/abstract"], ["release_date", Sun, 10 Aug 2014 00:00:00 UTC +00:00], ["runtime_in_minutes", 49], ["title", "Same Way Through"], ["updated_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["user_id", 37]]
+  [1m[35m (3.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (6.4ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["description", "Retro you probably haven't heard of them disrupt messenger bag asymmetrical kale chips pop-up. Farm-to-table shabby chic skateboard photo booth offal yr letterpress kogi. Vinegar master single-origin coffee banh mi viral yr you probably haven't heard of them microdosing."], ["director", "Geoffrey Jaskolski"], ["poster_image_url", "http://lorempixel.com/150/150/cats"], ["release_date", Wed, 10 Sep 2014 00:00:00 UTC +00:00], ["runtime_in_minutes", 76], ["title", "Finding a New Sun"], ["updated_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["user_id", 38]]
+  [1m[36m (3.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (5.6ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["description", "Iphone cardigan banh mi street next level vice xoxo. Bushwick marfa mixtape mlkshk xoxo. Disrupt cleanse direct trade."], ["director", "Ms. Yasmine Upton"], ["poster_image_url", "http://lorempixel.com/150/150/abstract"], ["release_date", Fri, 08 May 2015 00:00:00 UTC +00:00], ["runtime_in_minutes", 118], ["title", "Next Day Previous Night"], ["updated_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["user_id", 38]]
+  [1m[35m (4.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (5.2ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["description", "Small batch flexitarian etsy single-origin coffee bicycle rights williamsburg selvage. Tote bag twee yolo. Portland williamsburg retro gastropub fashion axe listicle. Iphone wolf kickstarter occupy ramps."], ["director", "Kristofer Bashirian"], ["poster_image_url", "http://lorempixel.com/150/150/sports"], ["release_date", Sun, 08 Mar 2015 00:00:00 UTC +00:00], ["runtime_in_minutes", 83], ["title", "A Year of Walking"], ["updated_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["user_id", 39]]
+  [1m[36m (3.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (5.6ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["description", "Polaroid listicle diy offal etsy butcher church-key. Hella pabst vinegar occupy gentrify 3 wolf moon sustainable polaroid. Pbr&b diy plaid pitchfork schlitz shabby chic brunch literally."], ["director", "Vergie Weber"], ["poster_image_url", "http://lorempixel.com/150/150/abstract"], ["release_date", Mon, 01 Jun 2015 00:00:00 UTC +00:00], ["runtime_in_minutes", 67], ["title", "Finding a New Sun"], ["updated_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["user_id", 39]]
+  [1m[35m (3.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (5.4ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["description", "Ennui occupy chartreuse wes anderson intelligentsia. Irony butcher schlitz. 8-bit authentic yr chartreuse typewriter kombucha. Wayfarers occupy master drinking williamsburg microdosing. Kogi pour-over cray ramps goth."], ["director", "Haley Conroy"], ["poster_image_url", "http://lorempixel.com/150/150/sports"], ["release_date", Sat, 01 Nov 2014 00:00:00 UTC +00:00], ["runtime_in_minutes", 173], ["title", "Same Way Through"], ["updated_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["user_id", 40]]
+  [1m[36m (3.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (6.0ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["description", "Hella swag irony. Before they sold out butcher kitsch put a bird on it kogi polaroid literally raw denim. Bicycle rights franzen carry cold-pressed taxidermy. Microdosing echo craft beer sustainable cardigan gastropub readymade."], ["director", "Demario Bogan"], ["poster_image_url", "http://lorempixel.com/150/150/cats"], ["release_date", Mon, 27 Apr 2015 00:00:00 UTC +00:00], ["runtime_in_minutes", 179], ["title", "The Frog Catchers Field Manual"], ["updated_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["user_id", 40]]
+  [1m[35m (3.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (5.3ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["description", "Ramps bushwick 8-bit pug. Artisan kinfolk food truck kitsch celiac scenester mixtape. Deep v put a bird on it forage bushwick humblebrag chambray. Letterpress ugh tofu humblebrag flexitarian synth brunch master. Polaroid irony synth skateboard craft beer."], ["director", "Helen Muller"], ["poster_image_url", "http://lorempixel.com/150/150/abstract"], ["release_date", Sun, 02 Nov 2014 00:00:00 UTC +00:00], ["runtime_in_minutes", 136], ["title", "A Dozen Heros"], ["updated_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["user_id", 41]]
+  [1m[36m (4.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (6.0ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["description", "Fixie bitters mlkshk umami. Lumbersexual deep v next level schlitz. Try-hard kale chips occupy messenger bag letterpress. Poutine swag yuccie. Hella salvia literally wes anderson carry kale chips chambray."], ["director", "Dr. Aglae Larson"], ["poster_image_url", "http://lorempixel.com/150/150/abstract"], ["release_date", Tue, 20 Jan 2015 00:00:00 UTC +00:00], ["runtime_in_minutes", 174], ["title", "Slicker Than Rain"], ["updated_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["user_id", 41]]
+  [1m[35m (3.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (5.6ms)[0m  INSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["description", "Drinking quinoa skateboard neutra letterpress craft beer. Flexitarian cleanse typewriter aesthetic single-origin coffee pabst park kitsch. Cold-pressed pbr&b sriracha tote bag."], ["director", "Keon Parisian"], ["poster_image_url", "http://lorempixel.com/150/150/cats"], ["release_date", Wed, 10 Dec 2014 00:00:00 UTC +00:00], ["runtime_in_minutes", 106], ["title", "Burning Water"], ["updated_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["user_id", 42]]
+  [1m[36m (3.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (6.2ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["description", "Twee celiac kogi pour-over gastropub trust fund. Schlitz chillwave meh ethical. Yr mlkshk gluten-free loko chillwave lo-fi farm-to-table. Crucifix fingerstache knausgaard chartreuse health godard vegan."], ["director", "Fabian Kunde"], ["poster_image_url", "http://lorempixel.com/150/150/sports"], ["release_date", Mon, 04 Jan 2016 00:00:00 UTC +00:00], ["runtime_in_minutes", 108], ["title", "Tomato in the Window"], ["updated_at", Sat, 06 Feb 2016 00:20:52 UTC +00:00], ["user_id", 42]]
+  [1m[35m (3.5ms)[0m  commit transaction
+
+
+Started GET "/movies" for 10.0.2.2 at 2016-02-06 00:20:57 +0000
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (3.3ms)[0m  SELECT "movies".* FROM "movies" ORDER BY "movies".title ASC LIMIT 10 OFFSET 0
+SQLite3::CorruptException: database disk image is malformed: SELECT  "movies".* FROM "movies"   ORDER BY "movies".title ASC LIMIT 10 OFFSET 0
+  Rendered movies/index.html.erb within layouts/application (50.4ms)
+Completed 500 Internal Server Error in 141ms
+
+ActionView::Template::Error (SQLite3::CorruptException: database disk image is malformed: SELECT  "movies".* FROM "movies"   ORDER BY "movies".title ASC LIMIT 10 OFFSET 0):
+    1: <h1>Rotten Mangoes</h1>
+    2: <%= link_to "Submit a movie!", new_movie_path %>
+    3: <hr>
+    4: <% @movies.each do |movie| %>
+    5: 	<%= link_to image_tag(movie.poster_image_url), movie_path(movie) %>
+    6: 	<%= link_to image_tag(movie.image.url), movie_path(@movie) %>
+    7: 	<h2><%= link_to movie.title, movie_path(movie) %></h2>
+  app/views/movies/index.html.erb:4:in `_app_views_movies_index_html_erb___386892129__620316868'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (18.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (28.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (55.3ms)
+
+
+Started GET "/movies" for 10.0.2.2 at 2016-02-06 00:21:11 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (2.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (9.1ms)[0m  SELECT "movies".* FROM "movies" ORDER BY "movies".title ASC LIMIT 10 OFFSET 0
+  [1m[36m (2.4ms)[0m  [1mSELECT COUNT(*) FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (765.9ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 1421ms (Views: 1279.1ms | ActiveRecord: 13.6ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 10.0.2.2 at 2016-02-06 00:21:13 +0000
+
+
+Started GET "/assets/users.css?body=1" for 10.0.2.2 at 2016-02-06 00:21:13 +0000
+
+
+Started GET "/assets/movies.css?body=1" for 10.0.2.2 at 2016-02-06 00:21:13 +0000
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2016-02-06 00:21:14 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2016-02-06 00:21:14 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2016-02-06 00:21:14 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2016-02-06 00:21:14 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2016-02-06 00:21:14 +0000
+
+
+Started GET "/assets/movies.js?body=1" for 10.0.2.2 at 2016-02-06 00:21:14 +0000
+
+
+Started GET "/assets/reviews.js?body=1" for 10.0.2.2 at 2016-02-06 00:21:14 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2016-02-06 00:21:14 +0000
+
+
+Started GET "/assets/users.js?body=1" for 10.0.2.2 at 2016-02-06 00:21:14 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2016-02-06 00:21:15 +0000
