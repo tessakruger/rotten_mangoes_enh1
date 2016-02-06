@@ -1,6 +1,9 @@
 class User < ActiveRecord::Base
 
+	paginates_per 20
+
 	has_many :reviews
+	has_many :movies
 
 	has_secure_password
 

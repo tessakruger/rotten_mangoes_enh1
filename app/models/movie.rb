@@ -1,6 +1,9 @@
 class Movie < ActiveRecord::Base
 
+  paginates_per 10
+
   has_many :reviews
+  belongs_to :user
 
   validates :title,
     presence: true
@@ -20,22 +23,19 @@ class Movie < ActiveRecord::Base
   validates_presence_of :poster_image_url,
     allow_nil: true
 
-  validates_presence_of :image,
-    allow_nil: true
-
   validate :release_date_is_in_the_past
 
   validate :image_size_validation
 
   validate :image_xor_poster_url
 
+  mount_uploader :image, ImageUploader # mount_uploader = method; :image = column name in movies table; ImageUploader = image_uploader.rb in app/uploaders
+
   def review_average
     if reviews.size > 0
       reviews.sum(:rating_out_of_ten)/reviews.size
     end
   end
-
-  mount_uploader :image, ImageUploader # mount_uploader = method; :image = column name in movies table; ImageUploader = image_uploader.rb in app/uploaders
 
   protected
 

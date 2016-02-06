@@ -49,3 +49,13 @@ gem 'mini_magick', '~> 4.3'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+# Pagination
+gem 'kaminari'
+
+# Seeding database with fake data
+gem 'faker'
+
+group :development do
+  gem 'web-console'
+end
